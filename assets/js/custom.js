@@ -140,13 +140,16 @@ $(".owl-carousel-technology").owlCarousel({
     responsive:{
         0:{
             items:1,
+            nav: false,
         },
         768:{
             items:1,
+            nav: false,
         },
 
         1000:{
             items:1,
+            nav: false,
         },
         1025:{
             items:1,
