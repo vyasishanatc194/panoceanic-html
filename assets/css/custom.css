@@ -201,7 +201,7 @@ fieldset {
 .header .navbar .collapse1 .navbar-nav .nav-item a:hover {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  color: #ffffff;
+  color: white;
 }
 
 .header .navbar .collapse1 .navbar-nav .nav-item a.active {
@@ -1760,11 +1760,19 @@ fieldset {
   color: #000000;
 }
 
+.middle-section .solution-section .row-5 {
+  margin: 0 -5px;
+}
+
+.middle-section .solution-section .row-5 .col-pad-5 {
+  padding: 0 5px;
+}
+
 .middle-section .solution-section .solution-card {
   padding: 30px;
   border-radius: 6px;
   background-color: #fcfcfc;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .middle-section .solution-section .solution-card .solution-img {
@@ -1775,6 +1783,10 @@ fieldset {
 
 .middle-section .solution-section .solution-card .solution-img img {
   width: 100%;
+}
+
+.middle-section .solution-section .solution-card .solution-body {
+  min-height: 250px;
 }
 
 .middle-section .solution-section .solution-card h3 {
@@ -1915,7 +1927,7 @@ fieldset {
 }
 
 .footer-section .copy-right-text ul li a:hover {
-  color: #ffffff;
+  color: white;
 }
 
 .footer-section .copy-right-text ul li a:last-child {

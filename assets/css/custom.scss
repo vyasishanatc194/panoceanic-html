@@ -1627,12 +1627,18 @@ fieldset {
        }
     }
 
+    .row-5 {
+      margin: 0 -5px;
+
+      .col-pad-5 {
+        padding: 0 5px;
+      }
+    }
     .solution-card {
       padding: 30px;
       border-radius: 6px;
       background-color: #fcfcfc;
-
-      margin-bottom: 30px;
+      margin-bottom: 20px;
 
       .solution-img {
         height: 60px;
@@ -1642,6 +1648,10 @@ fieldset {
         img {
           width: 100%;
         }
+      }
+
+      .solution-body {
+        min-height: 250px;
       }
 
       h3 {

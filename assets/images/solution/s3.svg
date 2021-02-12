@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55.932" height="60.903" viewBox="0 0 55.932 60.903">
+  <g id="s3" transform="translate(-37.068 -40.097)">
+    <circle id="Oval" cx="27" cy="27" r="27" transform="translate(39 47)" fill="rgba(171,174,239,0.28)"/>
+    <g id="Rectangle" transform="translate(37.068 40.097)">
+      <g id="lock" transform="translate(-0.068 -0.097)">
+        <rect id="Rectangle-2" data-name="Rectangle" width="37.064" height="29.604" rx="3.775" transform="translate(0.468 21.295)" fill="#f0f5f9"/>
+        <rect id="Rectangle-3" data-name="Rectangle" width="37.064" height="29.604" rx="3.775" transform="translate(0.468 21.295)" fill="#fe7058"/>
+        <path id="Path" d="M36.918,3.764V25.821A3.775,3.775,0,0,1,33.143,29.6H3.632A3.76,3.76,0,0,1,0,26.825c.1.006.2.012.3.012H29.815a3.779,3.779,0,0,0,3.776-3.776V1a3.628,3.628,0,0,0-.138-1A3.776,3.776,0,0,1,36.918,3.764Z" transform="translate(0.612 21.304)" fill="rgba(0,0,0,0.06)"/>
+        <path id="Shape" d="M4.175,30.406A4.18,4.18,0,0,1,0,26.231V4.175A4.18,4.18,0,0,1,4.175,0H33.689a4.181,4.181,0,0,1,4.176,4.175V26.23a4.18,4.18,0,0,1-4.176,4.176Z" transform="translate(0.068 20.894)" fill="#2f3a5a"/>
+        <path id="Path-2" data-name="Path" d="M4.824,2.416A2.412,2.412,0,1,0,1.16,4.474L.43,9.016H4.395l-.73-4.542a2.408,2.408,0,0,0,1.16-2.058Z" transform="translate(16.588 33.189)" fill="#2f3a5a"/>
+        <path id="Path-3" data-name="Path" d="M3.443,20.725V13.34a9.97,9.97,0,0,1,19.94,0v7.385h3.443V13.34A13.413,13.413,0,0,0,0,13.34v7.385Z" transform="translate(5.587 0.57)" fill="#9297ab"/>
+        <path id="Shape-2" data-name="Shape" d="M23.382,21.6V13.812a9.57,9.57,0,0,0-19.139,0V21.6H0V13.812a13.813,13.813,0,0,1,27.625,0V21.6Z" transform="translate(5.187 0.097)" fill="#2f3a5a"/>
+      </g>
+    </g>
+  </g>
+</svg>
