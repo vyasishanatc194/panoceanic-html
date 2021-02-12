@@ -77,11 +77,11 @@ $(".nav-link").click(function(){
 
 $("#toggle-read").click(function() {
     var elem = $("#toggle-read").text();
-    if (elem === "Read More...") {
+    if (elem === "Read more..") {
       $("#toggle-read").text("Read Less");
       $("#text_hide_show").show();
     } else {
-      $("#toggle-read").text("Read More...");
+      $("#toggle-read").text("Read more..");
       $("#text_hide_show").hide();
     }
   });
