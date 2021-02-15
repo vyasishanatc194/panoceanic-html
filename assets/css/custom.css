@@ -105,7 +105,7 @@ fieldset {
   }
 }
 
-/*############################ header section ###############################*/
+/* ############################ header section ############################### */
 .fixed-top {
   background-color: #2e3192 !important;
   -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.02);
@@ -245,7 +245,6 @@ fieldset {
   border: 1px solid #848484;
   height: 50px;
   background-color: #fff;
-  border-radius: 0;
   font-size: 18px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -312,8 +311,8 @@ fieldset {
 
 .btn.btn-outline-primary {
   border-radius: 100px;
-  color: #000000;
-  border-color: #000000;
+  color: #000;
+  border-color: #000;
   padding: 12px 40px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -323,17 +322,17 @@ fieldset {
 }
 
 .btn.btn-outline-primary:hover {
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
 }
 
 .btn.btn-outline-primary:focus {
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
 }
 
 .btn.btn-outline-primary:active {
-  background-color: #000000;
+  background-color: #000;
   color: #fff;
 }
 
@@ -485,7 +484,7 @@ fieldset {
 .middle-section .trending-section .heading h3 {
   font-size: 62px;
   line-height: 75px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
 }
 
@@ -529,7 +528,7 @@ fieldset {
 .middle-section .trending-section .technology-left .profile .profile-content h3 {
   font-size: 32px;
   line-height: 40px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
   margin-bottom: 5px;
 }
@@ -537,7 +536,7 @@ fieldset {
 .middle-section .trending-section .technology-left .profile .profile-content p {
   font-size: 22px;
   line-height: 26px;
-  color: #000000;
+  color: #000;
 }
 
 .middle-section .trending-section .owl-theme .owl-nav {
@@ -574,8 +573,6 @@ fieldset {
   border: 1px solid rgba(1, 36, 55, 0);
   background-color: transparent;
   border-radius: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   outline: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,7 +612,6 @@ fieldset {
 }
 
 .middle-section .trending-section .technology-img {
-  width: 100%;
   border-radius: 10px;
   height: 100%;
   width: 100%;
@@ -642,7 +638,7 @@ fieldset {
   margin-bottom: 30px;
 }
 
-.middle-section .buisness-needs-section .heading P {
+.middle-section .buisness-needs-section .heading p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   line-height: 28px;
@@ -693,7 +689,7 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness .buisness-box h3 {
-  color: #ffffff;
+  color: #fff;
   font-size: 44px;
   line-height: 29px;
   margin-bottom: 15px;
@@ -708,7 +704,7 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness .buisness-box a {
-  color: #000000;
+  color: #000;
   border: 1px solid #fff;
   height: 56px;
   width: 56px;
@@ -734,14 +730,14 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box p {
-  color: #000000;
+  color: #000;
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box a {
   background-color: #2e3192;
 }
 
-.middle-section .buisness-needs-section .buiness:hover:after {
+.middle-section .buisness-needs-section .buiness:hover::after {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -772,8 +768,6 @@ fieldset {
   border: 1px solid rgba(1, 36, 55, 0);
   background-color: #fff;
   border-radius: 100%;
-  -webkit-box-shadow: none;
-          box-shadow: none;
   outline: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -836,7 +830,6 @@ fieldset {
   background-image: url(../images/bg-testimonial.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
   margin-bottom: 60px;
   border-radius: 40px;
   z-index: 3;
@@ -964,7 +957,7 @@ fieldset {
 .middle-section .service-section .service-area .service-content h3 {
   font-size: 62px;
   line-height: 68px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
 }
 
@@ -1297,7 +1290,7 @@ fieldset {
 .middle-section .about-block-section .block-content .block-heading h3 {
   font-size: 44px;
   line-height: 57px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
 }
 
@@ -1318,7 +1311,7 @@ fieldset {
   margin-left: 100px;
 }
 
-.middle-section .about-block-section .block-img:after {
+.middle-section .about-block-section .block-img::after {
   content: "";
   background-image: url(../images/block-bg.png);
   background-repeat: no-repeat;
@@ -1370,11 +1363,11 @@ fieldset {
 
 .middle-section .about-block-section .block-img.right {
   position: relative;
-  margin-left: 0px;
+  margin-left: 0;
   margin-right: 100px;
 }
 
-.middle-section .about-block-section .block-img.right:after {
+.middle-section .about-block-section .block-img.right::after {
   content: "";
   background-image: url(../images/block-bg.png);
   background-repeat: no-repeat;
@@ -1470,7 +1463,7 @@ fieldset {
 .middle-section .why-panoceanic-section .content h3 {
   font-size: 62px;
   line-height: 68px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
 }
 
@@ -1531,7 +1524,7 @@ fieldset {
 .middle-section .how-we-work-section .heading h3 {
   font-size: 62px;
   line-height: 68px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
   margin-bottom: 25px;
 }
@@ -1583,7 +1576,7 @@ fieldset {
   position: absolute;
   background-color: #2e3192;
   margin: 0 auto;
-  left: 0px;
+  left: 0;
   right: 0;
   bottom: -10px;
 }
@@ -1756,7 +1749,6 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
 }
 
 .middle-section .belief-section .belief-blocks .about-content {
@@ -1790,7 +1782,7 @@ fieldset {
   width: 55%;
   height: auto;
   float: right;
-  right: 0px;
+  right: 0;
   top: 50%;
   -webkit-transform: perspective(1px) translateY(-50%);
           transform: perspective(1px) translateY(-50%);
@@ -1825,13 +1817,13 @@ fieldset {
   text-align: center;
 }
 
-.middle-section .belief-section .belief-blocks .about-image:before {
+.middle-section .belief-section .belief-blocks .about-image::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.1);
   opacity: 0.2;
@@ -1842,7 +1834,7 @@ fieldset {
 }
 
 .middle-section .belief-section .belief-blocks .about-inner .about-left {
-  left: 0px;
+  left: 0;
 }
 
 .middle-section .solution-section {
@@ -1859,12 +1851,12 @@ fieldset {
 .middle-section .solution-section .heading h3 {
   font-size: 44px;
   line-height: 57px;
-  color: #000000;
+  color: #000;
   font-family: "Crimson Text", serif;
 }
 
 .middle-section .solution-section .heading P {
-  color: #000000;
+  color: #000;
 }
 
 .middle-section .solution-section .row-5 {
@@ -1940,7 +1932,7 @@ fieldset {
   overflow: hidden;
 }
 
-.middle-section .banner-contact-section:after {
+.middle-section .banner-contact-section::after {
   content: "";
   background-color: #2e3192;
   height: 600px;
@@ -2065,7 +2057,7 @@ fieldset {
 .middle-section .insights-section .heading p {
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
 .middle-section .insights-section .container-fluid {
@@ -2091,7 +2083,7 @@ fieldset {
   max-width: 290px;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: #000;
 }
 
 .middle-section .insights-section .insights-box .insights-content .content {
@@ -2143,7 +2135,6 @@ fieldset {
 .middle-section .subscribe-section .subscribe-content h4 {
   font-size: 26px;
   line-height: 44px;
-  color: #fff;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 80px;
@@ -2230,7 +2221,7 @@ fieldset {
   max-width: 160px;
 }
 
-.footer-section .logo-footer-div .logo-footer:after {
+.footer-section .logo-footer-div .logo-footer::after {
   content: "\e930";
   font-family: "Feather" !important;
   speak: none;
@@ -2935,10 +2926,10 @@ fieldset {
   }
   .middle-section .about-block-section .block-img.right {
     position: relative;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 50px;
   }
-  .middle-section .about-block-section .block-img.right:after {
+  .middle-section .about-block-section .block-img.right::after {
     min-height: 250px;
   }
   .middle-section .about-block-section .block-img.right .play-circle {
@@ -3014,7 +3005,7 @@ fieldset {
   .middle-section .how-we-work-section .timeline {
     margin-top: 60px;
   }
-  .middle-section .how-we-work-section .timeline ul:after {
+  .middle-section .how-we-work-section .timeline ul::after {
     width: 3px;
   }
   .middle-section .how-we-work-section .timeline ul li:nth-child(odd) .content {
@@ -3549,7 +3540,7 @@ fieldset {
   .middle-section .insights-section .insights-box .insights-img {
     position: relative;
     max-width: 200px;
-    right: -4 0px;
+    right: -4 0;
     margin: 30px 0 0 auto;
   }
 }
