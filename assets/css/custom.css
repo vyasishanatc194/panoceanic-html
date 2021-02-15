@@ -318,6 +318,8 @@ fieldset {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .btn.btn-outline-primary:hover {
