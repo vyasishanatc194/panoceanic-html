@@ -171,7 +171,6 @@ fieldset {
     display: flex;
     height: 55px;
     background-color: #2e3192;
-    // box-shadow: 0 7px 12px rgba(0, 0, 0, 0.02);
     z-index: 999;
     border-bottom: 1px solid rgba(236, 236, 236, 0.06);
 
@@ -285,10 +284,12 @@ fieldset {
   line-height: 24px;
   color: rgba(0, 0, 0, 0.4);
 }
+
 .custom-control-label::before {
   height: 30px;
   width: 30px;
 }
+
 .custom-control-label::after {
   height: 30px;
   width: 30px;
@@ -322,6 +323,7 @@ fieldset {
   border-color: #000000;
   padding: 12px 40px;
   box-shadow: none;
+  text-transform: uppercase;
 
   &:hover {
     background-color: #000000;
@@ -371,8 +373,6 @@ fieldset {
     height: auto;
     background-color: #2e3192;
 
-    .banner-inner {
-    }
     .content {
       height: 100%;
       display: flex;
@@ -406,7 +406,7 @@ fieldset {
         &:hover {
           color: rgba(255, 255, 255, 1);
           transition: all 0.3s;
-          
+
           i {
             padding-left: 20px;
             transition: all 0.6s;
@@ -414,6 +414,7 @@ fieldset {
         }
       }
     }
+
     .banner-img {
       height: 100%;
       display: flex;
@@ -633,11 +634,13 @@ fieldset {
         text-align: left;
         z-index: 99;
         max-width: 227px;
+
         h3 {
           color: #ffffff;
           font-size: 44px;
           line-height: 29px;
           margin-bottom: 15px;
+          font-family: $crimson;
         }
 
         P {
@@ -669,6 +672,7 @@ fieldset {
           h3 {
             color: #2e3192;
           }
+
           p {
             color: #000000;
           }
@@ -803,6 +807,25 @@ fieldset {
         }
       }
     }
+
+    .owl-dots {
+      margin-bottom: 30px;
+
+      button {
+        box-shadow: none;
+        outline: 0;
+
+        span {
+          background-color: rgba(255, 255, 255, 0.5) !important;
+        }
+
+        &.active {
+          span {
+            background-color: rgba(255, 255, 255, 1) !important;
+          }
+        }
+      }
+    }
   }
 
   .more-section {
@@ -861,6 +884,7 @@ fieldset {
           font-size: 62px;
           line-height: 68px;
           color: #000000;
+          font-family: $crimson;
         }
 
         h4 {
@@ -897,6 +921,7 @@ fieldset {
             &:nth-child(6) {
               margin-left: 100px;
             }
+
             a {
               height: 150px;
               width: 150px;
@@ -924,6 +949,31 @@ fieldset {
     background-position: center;
     background-size: cover;
     height: 100%;
+    position: relative;
+
+    &::after {
+      content: '"';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.05);
+      font-size: 600px;
+      line-height: 70px;
+      font-family: $crimson;
+      margin: 0 auto;
+    }
+
+    .victory-inner {
+      position: relative;
+      z-index: 9;
+    }
 
     .heading {
       text-align: center;
@@ -933,6 +983,13 @@ fieldset {
         color: #fff;
         font-size: 72px;
         line-height: 100px;
+        background: #00cbff;
+        background: -webkit-linear-gradient(to right, #00cbff 0%, #f563e8 70%);
+        background: -moz-linear-gradient(to right, #00cbff 0%, #f563e8 70%);
+        background: linear-gradient(to right, #00cbff 0%, #f563e8 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
         span {
           display: block;
         }
@@ -1038,6 +1095,7 @@ fieldset {
         font-size: 34px;
         line-height: 48px;
         margin-bottom: 30px;
+
         span {
           display: block;
         }
@@ -1060,7 +1118,7 @@ fieldset {
         &:hover {
           color: rgba(255, 255, 255, 1);
           transition: all 0.3s;
-          
+
           i {
             padding-left: 20px;
             transition: all 0.6s;
@@ -1119,8 +1177,10 @@ fieldset {
 
     .block-content {
       padding: 0 60px;
+
       .block-heading {
         margin-bottom: 40px;
+
         h3 {
           font-size: 44px;
           line-height: 57px;
@@ -1141,6 +1201,7 @@ fieldset {
         color: #000;
       }
     }
+
     overflow: hidden;
 
     .block-img {
@@ -1248,6 +1309,7 @@ fieldset {
   .technology-integrated-section {
     padding: 120px;
     background-color: #2e3192;
+
     .integrated-content {
       h3 {
         font-size: 44px;
@@ -1275,6 +1337,7 @@ fieldset {
     .integrated-img {
       max-width: 440px;
       margin: 0 auto;
+
       img {
         width: 100%;
       }
@@ -1516,6 +1579,7 @@ fieldset {
               position: relative;
               top: -20px;
               text-align: right;
+
               h3 {
                 font-size: 26px;
                 line-height: 28px;
@@ -1536,8 +1600,10 @@ fieldset {
   .belief-section {
     padding: 120px 0;
     background-color: #2e3192;
+
     .heading {
       text-align: center;
+
       h3 {
         font-size: 62px;
         line-height: 68px;
@@ -1634,7 +1700,7 @@ fieldset {
         left: 0px;
         top: 0px;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.10);
+        background-color: rgba(0, 0, 0, 0.1);
         opacity: 0.2;
       }
 
@@ -1650,7 +1716,7 @@ fieldset {
 
   .solution-section {
     padding: 140px 0;
-    background-image: linear-gradient(180deg, #FCFCFC 0%, #F2F2F2 100%);
+    background-image: linear-gradient(180deg, #fcfcfc 0%, #f2f2f2 100%);
 
     .heading {
       text-align: center;
@@ -1663,9 +1729,9 @@ fieldset {
         font-family: $crimson;
       }
 
-       P {  
+      P {
         color: #000000;
-       }
+      }
     }
 
     .row-5 {
@@ -1717,7 +1783,6 @@ fieldset {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
- 
 
         h3 {
           color: #fff;
@@ -1732,19 +1797,18 @@ fieldset {
           border: 1px solid #fff;
         }
       }
-    
     }
   }
 
   .banner-contact-section {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     padding: 120px 0 120px 0;
     position: relative;
     overflow: hidden;
 
     &:after {
-      content: '';
-      background-color: #2E3192;
+      content: "";
+      background-color: #2e3192;
       height: 600px;
       width: 100%;
       position: absolute;
@@ -1754,8 +1818,7 @@ fieldset {
 
     .banner-contact-inner {
       position: relative;
-   
-      
+
       &::before {
         content: "";
         background-image: url(../images/pattern-2.png);
@@ -1782,8 +1845,6 @@ fieldset {
         z-index: 2;
       }
 
-
-      
       .contact-area {
         z-index: 99;
         position: relative;
@@ -1791,13 +1852,13 @@ fieldset {
         background-color: #fff;
         height: 100%;
         display: block;
-        box-shadow: 0 20px 40px 0 rgba(46, 49, 146,0.10);
+        box-shadow: 0 20px 40px 0 rgba(46, 49, 146, 0.1);
         border-radius: 8px;
 
         .heading {
           text-align: center;
           margin-bottom: 70px;
-    
+
           h2 {
             font-size: 62px;
             line-height: 68px;
@@ -1805,35 +1866,35 @@ fieldset {
             font-family: $crimson;
           }
 
-          h3  {
+          h3 {
             font-size: 26px;
             line-height: 36px;
             color: #000;
           }
-    
+
           p {
             font-size: 14px;
             line-height: 24px;
             color: rgba(0, 0, 0, 0.5);
           }
         }
-    
+
         .submit-div {
           display: flex;
           align-items: center;
           justify-content: space-between;
-    
+
           h3 {
             font-size: 18px;
             line-height: 26px;
             color: #000;
             margin-bottom: 0;
-    
+
             a {
               color: #000;
             }
           }
-    
+
           a.btn {
             padding: 12px 80px;
             text-transform: uppercase;
@@ -1842,7 +1903,6 @@ fieldset {
       }
     }
   }
-
 
   .insights-section {
     padding: 120px 0;
@@ -1882,7 +1942,7 @@ fieldset {
         h3 {
           font-size: 44px;
           line-height: 57px;
-          color: #2E3192;
+          color: #2e3192;
           font-family: $crimson;
         }
 
@@ -1898,13 +1958,13 @@ fieldset {
         }
 
         a.btn {
-          border-color: rgba(46, 49, 146,0.6);
+          border-color: rgba(46, 49, 146, 0.6);
           max-width: 250px;
           width: 100%;
           font-size: 14px;
 
           &:hover {
-            background-color:rgba(46, 49, 146, 1);
+            background-color: rgba(46, 49, 146, 1);
           }
         }
       }
@@ -1915,7 +1975,6 @@ fieldset {
         bottom: 0;
         max-width: 300px;
       }
-      
     }
 
     .row-0 {
@@ -1927,13 +1986,13 @@ fieldset {
     }
 
     .insights-box.box-grey {
-      background-color: #F8F8F8;
+      background-color: #f8f8f8;
     }
   }
 
   .subscribe-section {
     padding: 120px 0;
-    background-color: #2E3192;
+    background-color: #2e3192;
 
     .subscribe-content {
       h3 {
@@ -1948,7 +2007,7 @@ fieldset {
         line-height: 44px;
         color: #fff;
         font-weight: 400;
-        color: rgba(255, 255, 255, 0.60);
+        color: rgba(255, 255, 255, 0.6);
         margin-bottom: 80px;
       }
 
@@ -1969,7 +2028,7 @@ fieldset {
         &:hover {
           color: rgba(255, 255, 255, 1);
           transition: all 0.3s;
-          
+
           i {
             padding-left: 20px;
             transition: all 0.6s;
@@ -1984,7 +2043,6 @@ fieldset {
       margin: 0 0 0 auto;
     }
   }
-
 }
 
 .footer-section {
@@ -2031,6 +2089,7 @@ fieldset {
 
     .footer-link {
       color: #fff;
+
       &:hover {
         color: rgba(255, 255, 255, 0.5);
       }
@@ -2084,7 +2143,6 @@ fieldset {
   }
 }
 
-
 // popop
 
 .overlay {
@@ -2096,7 +2154,7 @@ fieldset {
   left: 0;
   background-color: rgba(46, 49, 146, 0.5); /* Black with a little bit see-through */
   z-index: 1100;
-  
+
   .overlay-content {
     position: relative;
     width: 100%;
@@ -2428,6 +2486,7 @@ fieldset {
 
     .trending-section {
       padding-bottom: 40px;
+
       .heading {
         margin-bottom: 40px;
 
@@ -2443,6 +2502,7 @@ fieldset {
             height: 70px;
             width: 70px;
           }
+
           .profile-content {
             h3 {
               font-size: 24px;
@@ -2470,12 +2530,14 @@ fieldset {
         top: auto;
         bottom: -30px;
         justify-content: center;
+
         button {
           height: 40px;
           width: 40px;
           position: unset !important;
         }
       }
+
       .owl-carousel {
         .row {
           flex-direction: column-reverse;
@@ -2610,6 +2672,7 @@ fieldset {
             li {
               height: unset;
               margin: 10px !important;
+
               a {
                 height: 120px;
                 width: 120px;
@@ -2672,36 +2735,35 @@ fieldset {
         }
       }
 
-       .custom-control-label {
-            font-size: 14px;
-            line-height: 24px;
-          }
-    
-          .submit-div {
-            a.btn {
-              padding: 12px 40px;
-            }
-    
-            h3 {
-              font-size: 14px;
-              line-height: 24px;
-              white-space: nowrap;
-            }
-          }
+      .custom-control-label {
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      .submit-div {
+        a.btn {
+          padding: 12px 40px;
+        }
+
+        h3 {
+          font-size: 14px;
+          line-height: 24px;
+          white-space: nowrap;
+        }
+      }
     }
 
-    .banner-contact-section  {
+    .banner-contact-section {
       padding: 60px 0;
 
       .banner-contact-inner {
-
-        &::after{
+        &::after {
           height: 400px;
           width: 400px;
           right: -200px;
         }
 
-        &::before{
+        &::before {
           height: 400px;
           width: 400px;
           left: -200px;
@@ -2722,24 +2784,24 @@ fieldset {
               margin-bottom: 20px;
             }
           }
-    
+
           .form-group {
             .form-control {
               height: 50px;
               font-size: 16px;
             }
           }
-    
+
           .custom-control-label {
             font-size: 14px;
             line-height: 24px;
           }
-    
+
           .submit-div {
             a.btn {
               padding: 12px 40px;
             }
-    
+
             h3 {
               font-size: 14px;
               line-height: 24px;
@@ -2750,9 +2812,7 @@ fieldset {
       }
     }
 
-
     .banner-inner-section {
-
       .content {
         padding: 50px 0;
         height: auto;
@@ -2787,7 +2847,6 @@ fieldset {
         }
       }
 
-
       .block-img {
         margin-left: 50px;
 
@@ -2805,44 +2864,42 @@ fieldset {
             border: 16px solid #fff;
             left: -50px;
             top: calc(50% - 40px);
-            img {
 
+            img {
+              width: 100%;
             }
           }
         }
       }
 
-
       .block-img.right {
         position: relative;
         margin-left: 0px;
         margin-right: 50px;
-        
+
         &:after {
-         min-height: 250px;
+          min-height: 250px;
         }
-  
+
         .play-circle {
-         right: -50px;
+          right: -50px;
           left: auto;
         }
-  
+
         .block-feature {
           width: 100%;
           height: auto;
-
         }
       }
 
       .row-item-mobile {
         flex-direction: column-reverse;
       }
-
     }
 
     .technology-integrated-section {
       padding: 60px 0;
-      
+
       .integrated-content {
         padding: 20px 15px;
 
@@ -2851,7 +2908,7 @@ fieldset {
           line-height: 36px;
         }
 
-        p{
+        p {
           font-size: 16px;
           line-height: 24px;
         }
@@ -2870,7 +2927,7 @@ fieldset {
 
     .why-panoceanic-section {
       padding: 60px 0 40px 0;
-      
+
       .content {
         h3 {
           font-size: 26px;
@@ -2881,8 +2938,8 @@ fieldset {
       .why-panoceanic-img {
         img {
           margin: 0 auto;
-         max-width: 250px;
-         display: block; 
+          max-width: 250px;
+          display: block;
         }
       }
 
@@ -2910,23 +2967,21 @@ fieldset {
           line-height: 36px;
         }
 
-         P {
-           font-size: 16px;
-           line-height: 24px;
-         }
+        P {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
 
       .timeline {
         margin-top: 60px;
 
         ul {
-
           &:after {
             width: 3px;
           }
 
           li {
-            
             &:nth-child(odd) {
               .content {
                 top: 0;
@@ -2944,7 +2999,6 @@ fieldset {
             }
 
             &:nth-child(even) {
-
               .row-line {
                 flex-direction: column-reverse;
               }
@@ -2967,9 +3021,6 @@ fieldset {
           }
         }
       }
-
-      
-
     }
 
     .belief-section {
@@ -2981,14 +3032,13 @@ fieldset {
           line-height: 36px;
         }
 
-        p{
+        p {
           font-size: 16px;
           line-height: 26px;
         }
       }
 
       .about-inner {
-
         flex-direction: column;
 
         .about-content {
@@ -3015,13 +3065,12 @@ fieldset {
             line-height: 27px;
           }
 
-           P {
-             font-size: 16px;
-             line-height: 26px;
-           }
+          P {
+            font-size: 16px;
+            line-height: 26px;
+          }
         }
       }
-      
     }
 
     .solution-section {
@@ -3043,44 +3092,44 @@ fieldset {
       }
     }
 
-   .insights-section {
-     padding: 60px 0;
+    .insights-section {
+      padding: 60px 0;
 
-     .heading {
-       h3 {
-         font-size: 28px;
-         line-height: 36px;
-       }
+      .heading {
+        h3 {
+          font-size: 28px;
+          line-height: 36px;
+        }
 
-       p {
-         font-size: 14px;
-         line-height: 26px;
-       }
-     }
-     .insights-box {
-       padding: 30px 20px; 
-       display: flex;
-       flex-direction: column-reverse;
-       
-       .insights-img {
-         
-         width: 100%;
-         position: unset;
-         max-width: 200px;
-         margin: 20px auto;
-       }
+        p {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
 
-       .insights-content {
-         h3 {
-           font-size: 24px;
-           line-height: 30px;
-           margin-bottom: 10px;
-         }
+      .insights-box {
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column-reverse;
 
-          P{
+        .insights-img {
+          width: 100%;
+          position: unset;
+          max-width: 200px;
+          margin: 20px auto;
+        }
+
+        .insights-content {
+          h3 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 10px;
+          }
+
+          P {
             font-size: 14px;
             line-height: 24px;
-            max-width: unset; 
+            max-width: unset;
           }
 
           a.btn {
@@ -3088,41 +3137,40 @@ fieldset {
             max-width: unset;
             padding: 10px 45px;
           }
-       }
-     }
+        }
+      }
 
-     .mobile-row {
-       flex-direction: column-reverse;
-     }
-   }
+      .mobile-row {
+        flex-direction: column-reverse;
+      }
+    }
 
-   .subscribe-section {
-     padding: 60px 0;
+    .subscribe-section {
+      padding: 60px 0;
 
-     .subscribe-content {
-       h3 {
-         font-size: 28px;
-         line-height: 36px;
-       }
+      .subscribe-content {
+        h3 {
+          font-size: 28px;
+          line-height: 36px;
+        }
 
-       h4 {
-         font-size: 18px;
-         line-height: 30px;
-         margin-bottom: 40px;
-       }
+        h4 {
+          font-size: 18px;
+          line-height: 30px;
+          margin-bottom: 40px;
+        }
 
-       a.text-link {
-        font-size: 16px;
-        line-height: 20px;
-       }
-     }
+        a.text-link {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
 
-     .subscribe-img {
-       margin: 50px auto 30px auto;
-       max-width: 250px;
-     }
-   }
-
+      .subscribe-img {
+        margin: 50px auto 30px auto;
+        max-width: 250px;
+      }
+    }
   }
 
   .footer-section {
@@ -3130,6 +3178,7 @@ fieldset {
 
     .copy-right-text .copy-inner {
       flex-direction: column-reverse;
+
       ul {
         margin-bottom: 30px;
       }
@@ -3165,27 +3214,21 @@ fieldset {
 
       .block-content {
         padding: 20px 10px;
-        
+
         h3 {
           font-size: 28px;
           line-height: 36px;
         }
       }
-
     }
-
-
-  
   }
 }
 
-
 @media (min-width: 1100px) and (max-width: 1200px) {
-
   .middle-section {
     .insights-section {
       .insights-box {
-        padding: 50px 30px 0 30px; 
+        padding: 50px 30px 0 30px;
         overflow: hidden;
         text-align: left;
 
@@ -3195,7 +3238,6 @@ fieldset {
           p {
             max-width: unset;
           }
-
         }
 
         .insights-img {
@@ -3207,16 +3249,16 @@ fieldset {
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
-
   .middle-section {
     .insights-section {
       .insights-box {
-        padding: 50px 60px 0 60px; 
+        padding: 50px 60px 0 60px;
         overflow: hidden;
         text-align: left;
 
         .insights-content {
           max-width: 400px;
+
           p {
             max-width: unset;
           }
@@ -3225,12 +3267,13 @@ fieldset {
         .insights-img {
           max-width: 200px;
           right: -10px;
-          margin: 30px  0 0 auto;
+          margin: 30px 0 0 auto;
           position: relative;
         }
       }
     }
-    .solution-section .solution-card .solution-body  {
+
+    .solution-section .solution-card .solution-body {
       min-height: unset;
     }
   }
@@ -3451,9 +3494,8 @@ fieldset {
     }
 
     .insights-section {
-
       .mobile-row {
-        flex-direction: column-reverse;  
+        flex-direction: column-reverse;
       }
 
       .insights-box {
@@ -3463,6 +3505,7 @@ fieldset {
 
         .insights-content {
           max-width: 400px;
+
           p {
             max-width: unset;
           }
@@ -3483,7 +3526,7 @@ fieldset {
       }
     }
 
-    .belief-section .belief-blocks  {
+    .belief-section .belief-blocks {
       .about-image {
         height: 480px;
       }
@@ -3510,7 +3553,6 @@ fieldset {
     .why-panoceanic-section {
       padding: 80px 0 40px 0;
     }
-
   }
 }
 
@@ -3540,6 +3582,7 @@ fieldset {
         bottom: -50px;
         top: auto;
         justify-content: center;
+
         button {
           right: 0 !important;
           left: 0 !important;
@@ -3557,12 +3600,9 @@ fieldset {
       min-height: 250px;
     }
 
-
     .how-we-work-section {
       padding: 80px 0 60px 0;
     }
-  
-
   }
 }
 
@@ -3583,13 +3623,13 @@ fieldset {
         text-align: left;
 
         .insights-content {
-
+          max-width: 350px;
+          
           h3 {
             font-size: 40px;
             line-height: 50px;
           }
 
-          max-width: 350px;
           p {
             max-width: unset;
           }
@@ -3603,9 +3643,6 @@ fieldset {
         }
       }
     }
-
-    
-   
   }
 }
 
@@ -3629,10 +3666,8 @@ fieldset {
         text-align: left;
 
         .insights-content {
-
-       
-
           max-width: 350px;
+          
           p {
             max-width: unset;
           }

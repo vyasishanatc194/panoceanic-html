@@ -317,6 +317,7 @@ fieldset {
   padding: 12px 40px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  text-transform: uppercase;
 }
 
 .btn.btn-outline-primary:hover {
@@ -694,6 +695,7 @@ fieldset {
   font-size: 44px;
   line-height: 29px;
   margin-bottom: 15px;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .buisness-needs-section .buiness .buisness-box P {
@@ -885,6 +887,24 @@ fieldset {
   color: #fff;
 }
 
+.middle-section .testimomnial-section .owl-dots {
+  margin-bottom: 30px;
+}
+
+.middle-section .testimomnial-section .owl-dots button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.middle-section .testimomnial-section .owl-dots button span {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.middle-section .testimomnial-section .owl-dots button.active span {
+  background-color: white !important;
+}
+
 .middle-section .more-section {
   padding: 40px 0;
   background-color: #fff;
@@ -943,6 +963,7 @@ fieldset {
   font-size: 62px;
   line-height: 68px;
   color: #000000;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .service-section .service-area .service-content h4 {
@@ -1008,6 +1029,37 @@ fieldset {
   background-position: center;
   background-size: cover;
   height: 100%;
+  position: relative;
+}
+
+.middle-section .victory-section::after {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.05);
+  font-size: 600px;
+  line-height: 70px;
+  font-family: "Crimson Text", serif;
+  margin: 0 auto;
+}
+
+.middle-section .victory-section .victory-inner {
+  position: relative;
+  z-index: 9;
 }
 
 .middle-section .victory-section .heading {
@@ -1019,6 +1071,11 @@ fieldset {
   color: #fff;
   font-size: 72px;
   line-height: 100px;
+  background: #00cbff;
+  background: -webkit-gradient(linear, left top, right top, from(#00cbff), color-stop(70%, #f563e8));
+  background: linear-gradient(to right, #00cbff 0%, #f563e8 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .middle-section .victory-section .heading h3 span {
@@ -1788,8 +1845,8 @@ fieldset {
 
 .middle-section .solution-section {
   padding: 140px 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FCFCFC), to(#F2F2F2));
-  background-image: linear-gradient(180deg, #FCFCFC 0%, #F2F2F2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#f2f2f2));
+  background-image: linear-gradient(180deg, #fcfcfc 0%, #f2f2f2 100%);
 }
 
 .middle-section .solution-section .heading {
@@ -1875,15 +1932,15 @@ fieldset {
 }
 
 .middle-section .banner-contact-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 120px 0 120px 0;
   position: relative;
   overflow: hidden;
 }
 
 .middle-section .banner-contact-section:after {
-  content: '';
-  background-color: #2E3192;
+  content: "";
+  background-color: #2e3192;
   height: 600px;
   width: 100%;
   position: absolute;
@@ -2024,7 +2081,7 @@ fieldset {
 .middle-section .insights-section .insights-box .insights-content h3 {
   font-size: 44px;
   line-height: 57px;
-  color: #2E3192;
+  color: #2e3192;
   font-family: "Crimson Text", serif;
 }
 
@@ -2066,12 +2123,12 @@ fieldset {
 }
 
 .middle-section .insights-section .insights-box.box-grey {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 .middle-section .subscribe-section {
   padding: 120px 0;
-  background-color: #2E3192;
+  background-color: #2e3192;
 }
 
 .middle-section .subscribe-section .subscribe-content h3 {
@@ -2871,6 +2928,9 @@ fieldset {
     left: -50px;
     top: calc(50% - 40px);
   }
+  .middle-section .about-block-section .block-img .block-feature .play-circle img {
+    width: 100%;
+  }
   .middle-section .about-block-section .block-img.right {
     position: relative;
     margin-left: 0px;
@@ -3178,7 +3238,7 @@ fieldset {
   .middle-section .insights-section .insights-box .insights-img {
     max-width: 200px;
     right: -10px;
-    margin: 30px  0 0 auto;
+    margin: 30px 0 0 auto;
     position: relative;
   }
   .middle-section .solution-section .solution-card .solution-body {
