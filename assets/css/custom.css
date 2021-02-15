@@ -403,6 +403,28 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: "Crimson Text", serif;
+}
+
+.middle-section .banner-section .content a i {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  position: relative;
+  top: 4px;
+}
+
+.middle-section .banner-section .content a:hover {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.middle-section .banner-section .content a:hover i {
+  padding-left: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .middle-section .banner-section .banner-img {
@@ -461,6 +483,7 @@ fieldset {
   font-size: 62px;
   line-height: 75px;
   color: #000000;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .trending-section .technology-left {
@@ -504,6 +527,8 @@ fieldset {
   font-size: 32px;
   line-height: 40px;
   color: #000000;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 5px;
 }
 
 .middle-section .trending-section .technology-left .profile .profile-content p {
@@ -1048,6 +1073,7 @@ fieldset {
   font-size: 62px;
   line-height: 68px;
   color: #000;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .get-in-touch-section .heading p {
@@ -1127,6 +1153,26 @@ fieldset {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Crimson Text", serif;
+}
+
+.middle-section .banner-inner-section .content a i {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  position: relative;
+  top: 4px;
+}
+
+.middle-section .banner-inner-section .content a:hover {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.middle-section .banner-inner-section .content a:hover i {
+  padding-left: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .middle-section .banner-inner-section .banner-img {
@@ -1143,7 +1189,7 @@ fieldset {
 }
 
 .middle-section .banner-inner-section .banner-img img {
-  width: auto;
+  width: 100%;
   min-width: 402px;
   position: absolute;
   max-height: 403px;
@@ -1629,6 +1675,7 @@ fieldset {
   line-height: 68px;
   color: #fff;
   margin-bottom: 30px;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .belief-section .heading P {
@@ -1754,6 +1801,7 @@ fieldset {
   font-size: 44px;
   line-height: 57px;
   color: #000000;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .solution-section .heading P {
@@ -1824,6 +1872,261 @@ fieldset {
 .middle-section .solution-section .solution-card:hover a.btn {
   color: #fff;
   border: 1px solid #fff;
+}
+
+.middle-section .banner-contact-section {
+  background-color: #FAFAFA;
+  padding: 120px 0 120px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.middle-section .banner-contact-section:after {
+  content: '';
+  background-color: #2E3192;
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner {
+  position: relative;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner::before {
+  content: "";
+  background-image: url(../images/pattern-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 743px;
+  height: 718px;
+  position: absolute;
+  left: -100px;
+  top: 50px;
+  z-index: 2;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner::after {
+  content: "";
+  background-image: url(../images/pattern-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 743px;
+  height: 718px;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+  z-index: 2;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area {
+  z-index: 99;
+  position: relative;
+  padding: 60px 90px;
+  background-color: #fff;
+  height: 100%;
+  display: block;
+  -webkit-box-shadow: 0 20px 40px 0 rgba(46, 49, 146, 0.1);
+          box-shadow: 0 20px 40px 0 rgba(46, 49, 146, 0.1);
+  border-radius: 8px;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h2 {
+  font-size: 62px;
+  line-height: 68px;
+  color: #000;
+  font-family: "Crimson Text", serif;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h3 {
+  font-size: 26px;
+  line-height: 36px;
+  color: #000;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .heading p {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .submit-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .submit-div h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .submit-div h3 a {
+  color: #000;
+}
+
+.middle-section .banner-contact-section .banner-contact-inner .contact-area .submit-div a.btn {
+  padding: 12px 80px;
+  text-transform: uppercase;
+}
+
+.middle-section .insights-section {
+  padding: 120px 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.middle-section .insights-section .heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.middle-section .insights-section .heading h3 {
+  font-size: 44px;
+  line-height: 61px;
+  color: #000;
+  font-family: "Crimson Text", serif;
+}
+
+.middle-section .insights-section .heading p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.middle-section .insights-section .container-fluid {
+  padding: 0;
+  max-width: 1920px;
+}
+
+.middle-section .insights-section .insights-box {
+  padding: 120px 0 170px 90px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+}
+
+.middle-section .insights-section .insights-box .insights-content h3 {
+  font-size: 44px;
+  line-height: 57px;
+  color: #2E3192;
+  font-family: "Crimson Text", serif;
+}
+
+.middle-section .insights-section .insights-box .insights-content p {
+  max-width: 290px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.middle-section .insights-section .insights-box .insights-content .content {
+  margin-bottom: 40px;
+}
+
+.middle-section .insights-section .insights-box .insights-content a.btn {
+  border-color: rgba(46, 49, 146, 0.6);
+  max-width: 250px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.middle-section .insights-section .insights-box .insights-content a.btn:hover {
+  background-color: #2e3192;
+}
+
+.middle-section .insights-section .insights-box .insights-img {
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  max-width: 300px;
+}
+
+.middle-section .insights-section .row-0 {
+  margin: 0 !important;
+}
+
+.middle-section .insights-section .row-0 .pad-0 {
+  padding: 0 !important;
+}
+
+.middle-section .insights-section .insights-box.box-grey {
+  background-color: #F8F8F8;
+}
+
+.middle-section .subscribe-section {
+  padding: 120px 0;
+  background-color: #2E3192;
+}
+
+.middle-section .subscribe-section .subscribe-content h3 {
+  font-size: 44px;
+  line-height: 55px;
+  color: #fff;
+  font-family: "Crimson Text", serif;
+}
+
+.middle-section .subscribe-section .subscribe-content h4 {
+  font-size: 26px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 80px;
+}
+
+.middle-section .subscribe-section .subscribe-content a {
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.5);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.middle-section .subscribe-section .subscribe-content a i {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  position: relative;
+  top: 4px;
+}
+
+.middle-section .subscribe-section .subscribe-content a:hover {
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.middle-section .subscribe-section .subscribe-content a:hover i {
+  padding-left: 20px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.middle-section .subscribe-section .subscribe-img {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 0 0 auto;
 }
 
 .footer-section {
@@ -1932,6 +2235,202 @@ fieldset {
 
 .footer-section .copy-right-text ul li a:last-child {
   border-right: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(46, 49, 146, 0.5);
+  /* Black with a little bit see-through */
+  z-index: 1100;
+}
+
+.overlay .overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.overlay .overlay-content form {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.overlay .overlay-content form input[type="text"] {
+  padding: 5px 15px;
+  font-size: 40px;
+  color: #2e3192;
+  letter-spacing: 0.64px;
+  font-weight: 500;
+  border: none;
+  float: left;
+  background: #fff;
+  width: 80%;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0 !important;
+  border-bottom: 1px solid rgba(46, 49, 146, 0.8);
+  border-radius: 0 !important;
+}
+
+.overlay .overlay-content form input[type="text"]:focus {
+  background: #fff;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  outline: 0 !important;
+  border-bottom: 1px solid #2e3192;
+}
+
+.overlay .overlay-content .closebtn {
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 999;
+  color: rgba(46, 49, 146, 0.8);
+  font-size: 40px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.overlay .overlay-content .closebtn:hover {
+  color: #2e3192;
+}
+
+.overlay .overlay-content button {
+  float: left;
+  padding: 10px 20px;
+  background: #fff;
+  color: #2e3192;
+  font-size: 40px;
+  border: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.overlay .overlay-content button:hover {
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .overlay .overlay-content {
+    padding: 50px 20px;
+  }
+  .overlay .overlay-content form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .overlay .overlay-content form input[type="text"] {
+    padding: 3px 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .overlay .overlay-content form input[type="text"]:focus {
+    background: white;
+  }
+  .overlay .overlay-content .closebtn {
+    padding: 10px 15px;
+    font-size: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .overlay .overlay-content button {
+    float: left;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  .overlay .overlay-content button:hover {
+    background: #fff;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .overlay .overlay-content {
+    padding: 50px 20px;
+  }
+  .overlay .overlay-content form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .overlay .overlay-content form input[type="text"] {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  .overlay .overlay-content form input[type="text"]:focus {
+    background: white;
+  }
+  .overlay .overlay-content .closebtn {
+    padding: 10px 15px;
+    font-size: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .overlay .overlay-content button {
+    float: left;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  .overlay .overlay-content button:hover {
+    background: #fff;
+  }
 }
 
 /* ###########################################################################
@@ -2278,14 +2777,58 @@ fieldset {
     font-size: 16px;
   }
   .middle-section .get-in-touch-section .custom-control-label {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 24px;
   }
   .middle-section .get-in-touch-section .submit-div a.btn {
-    padding: 12px 60px;
+    padding: 12px 40px;
   }
   .middle-section .get-in-touch-section .submit-div h3 {
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+  .middle-section .banner-contact-section {
+    padding: 60px 0;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner::after {
+    height: 400px;
+    width: 400px;
+    right: -200px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner::before {
+    height: 400px;
+    width: 400px;
+    left: -200px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area {
+    padding: 40px 30px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h3 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h2 {
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .form-group .form-control {
+    height: 50px;
     font-size: 16px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .custom-control-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .submit-div a.btn {
+    padding: 12px 40px;
+  }
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .submit-div h3 {
+    font-size: 14px;
+    line-height: 24px;
+    white-space: nowrap;
   }
   .middle-section .banner-inner-section .content {
     padding: 50px 0;
@@ -2484,6 +3027,86 @@ fieldset {
     font-size: 16px;
     line-height: 26px;
   }
+  .middle-section .solution-section {
+    padding: 60px 0;
+  }
+  .middle-section .solution-section .heading h3 {
+    font-size: 28px;
+    line-height: 36px;
+    color: #000;
+  }
+  .middle-section .solution-section .solution-card .solution-body {
+    min-height: unset;
+    margin-bottom: 30px;
+  }
+  .middle-section .insights-section {
+    padding: 60px 0;
+  }
+  .middle-section .insights-section .heading h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .middle-section .insights-section .heading p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .middle-section .insights-section .insights-box {
+    padding: 30px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .middle-section .insights-section .insights-box .insights-img {
+    width: 100%;
+    position: unset;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+  .middle-section .insights-section .insights-box .insights-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .middle-section .insights-section .insights-box .insights-content P {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: unset;
+  }
+  .middle-section .insights-section .insights-box .insights-content a.btn {
+    width: auto;
+    max-width: unset;
+    padding: 10px 45px;
+  }
+  .middle-section .insights-section .mobile-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .middle-section .subscribe-section {
+    padding: 60px 0;
+  }
+  .middle-section .subscribe-section .subscribe-content h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .middle-section .subscribe-section .subscribe-content h4 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .middle-section .subscribe-section .subscribe-content a.text-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .middle-section .subscribe-section .subscribe-img {
+    margin: 50px auto 30px auto;
+    max-width: 250px;
+  }
   .footer-section {
     padding-top: 30px;
   }
@@ -2520,6 +3143,46 @@ fieldset {
   .middle-section .about-block-section .block-content h3 {
     font-size: 28px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .middle-section .insights-section .insights-box {
+    padding: 50px 30px 0 30px;
+    overflow: hidden;
+    text-align: left;
+  }
+  .middle-section .insights-section .insights-box .insights-content {
+    max-width: 350px;
+  }
+  .middle-section .insights-section .insights-box .insights-content p {
+    max-width: unset;
+  }
+  .middle-section .insights-section .insights-box .insights-img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .middle-section .insights-section .insights-box {
+    padding: 50px 60px 0 60px;
+    overflow: hidden;
+    text-align: left;
+  }
+  .middle-section .insights-section .insights-box .insights-content {
+    max-width: 400px;
+  }
+  .middle-section .insights-section .insights-box .insights-content p {
+    max-width: unset;
+  }
+  .middle-section .insights-section .insights-box .insights-img {
+    max-width: 200px;
+    right: -10px;
+    margin: 30px  0 0 auto;
+    position: relative;
+  }
+  .middle-section .solution-section .solution-card .solution-body {
+    min-height: unset;
   }
 }
 
@@ -2718,6 +3381,52 @@ fieldset {
     max-width: 400px;
     margin: 30px auto;
   }
+  .middle-section .insights-section .mobile-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .middle-section .insights-section .insights-box {
+    padding: 50px 60px;
+    overflow: hidden;
+    text-align: left;
+  }
+  .middle-section .insights-section .insights-box .insights-content {
+    max-width: 400px;
+  }
+  .middle-section .insights-section .insights-box .insights-content p {
+    max-width: unset;
+  }
+  .middle-section .insights-section .insights-box .insights-img {
+    max-width: 200px;
+    right: -10px;
+    margin: 30px auto;
+    position: absolute;
+  }
+  .middle-section .subscribe-section .subscribe-img {
+    margin: 50px auto;
+  }
+  .middle-section .belief-section .belief-blocks .about-image {
+    height: 480px;
+  }
+  .middle-section .belief-section .belief-blocks .about-text {
+    padding: 30px 25px;
+  }
+  .middle-section .belief-section .belief-blocks .about-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .middle-section .how-we-work-section {
+    padding: 80px 0;
+  }
+  .middle-section .how-we-work-section .timeline ul li:nth-child(even) .content {
+    top: 0;
+    padding-top: 20px;
+  }
+  .middle-section .why-panoceanic-section {
+    padding: 80px 0 40px 0;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -2745,6 +3454,12 @@ fieldset {
     width: 120px;
     height: 120px;
   }
+  .middle-section .solution-section .solution-card .solution-body {
+    min-height: 250px;
+  }
+  .middle-section .how-we-work-section {
+    padding: 80px 0 60px 0;
+  }
 }
 
 /* ----------- iPad Pro ----------- */
@@ -2754,6 +3469,27 @@ fieldset {
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5) {
   /* ----------- No css ----------- */
+  .middle-section .insights-section .insights-box {
+    padding: 50px 40px 0 40px;
+    overflow: hidden;
+    text-align: left;
+  }
+  .middle-section .insights-section .insights-box .insights-content {
+    max-width: 350px;
+  }
+  .middle-section .insights-section .insights-box .insights-content h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .middle-section .insights-section .insights-box .insights-content p {
+    max-width: unset;
+  }
+  .middle-section .insights-section .insights-box .insights-img {
+    position: relative;
+    max-width: 200px;
+    right: -4 0px;
+    margin: 30px 0 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -2761,6 +3497,26 @@ fieldset {
   .middle-section .service-section .service-area .service-content-logo ul li a {
     width: 120px;
     height: 120px;
+  }
+  .middle-section .solution-section .solution-card .solution-body {
+    min-height: 250px;
+  }
+  .middle-section .insights-section .insights-box {
+    padding: 50px 40px 0 40px;
+    overflow: hidden;
+    text-align: left;
+  }
+  .middle-section .insights-section .insights-box .insights-content {
+    max-width: 350px;
+  }
+  .middle-section .insights-section .insights-box .insights-content p {
+    max-width: unset;
+  }
+  .middle-section .insights-section .insights-box .insights-img {
+    max-width: 200px;
+    right: -30px;
+    margin: 30px 0 0 auto;
+    position: relative;
   }
 }
 /*# sourceMappingURL=custom.css.map */

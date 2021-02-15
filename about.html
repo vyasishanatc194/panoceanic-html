@@ -17,50 +17,62 @@
 
 <body class="d-flex flex-column h-100">
 
-    <header class="header">
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark ">
-        <div class="container">
-          <div class="row row-100 col-header">
-            <div class="col-lg-3 col-12 col-30">
-              <a class="navbar-brand smoth-scroll" href="index.html"><img src="assets/images/logo.png" alt="" /></a>
-            </div>
-            <div class="col-lg-9 col-12 col-70">
-                <button class="navbar-toggler" onclick="openNav2()" type="button">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="collapse1 navbar-collapse sidenav-new-menu nav-full-menu" id="mySidenav2">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><img src="assets/images/close-menu.png" alt=""/></a>
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item ">
-                    <a class="nav-link smoth-scroll " href="#">Home</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link smoth-scroll active" href="#">About Panoceanic</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link smoth-scroll" href="#">Your Needs</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link smoth-scroll" href="#">Connect </a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link smoth-scroll" href="#"> Connect With Panoceanic</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link smoth-scroll" href="#"><i class="fa fa-search"></i></a>
-                  </li>
-                </ul>
-              </div>
-
-              <div id="cd-shadow-layer" onclick="closeNav2()" style="display: none;"></div>
-            </div>
+  <header class="header">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+      <div class="container">
+        <div class="row row-100 col-header">
+          <div class="col-lg-3 col-12 col-30">
+            <a class="navbar-brand smoth-scroll" href="index.html"><img src="assets/images/logo.png" alt="" /></a>
           </div>
+          <div class="col-lg-9 col-12 col-70">
+              <button class="navbar-toggler" onclick="openNav2()" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse1 navbar-collapse sidenav-new-menu nav-full-menu" id="mySidenav2">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"><img src="assets/images/close-menu.png" alt=""/></a>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll active" href="about.html">About Panoceanic</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll" href="your-needs.html">Your Needs</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll" href="contact-us.html">Connect </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll" href="insight.html"> Connect With Panoceanic</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link smoth-scroll" href="#" id="opensearch"><i class="fa fa-search"></i></a>
+                </li>
+              </ul>
+            </div>
 
+            <div id="cd-shadow-layer" onclick="closeNav2()" style="display: none;"></div>
+          </div>
         </div>
 
-      </nav>
-    </header>
+      </div>
+
+    </nav>
+
+    <div id="myOverlay" class="overlay">
+
+      <div class="overlay-content wow fadeInDown" data-wow-duration="1s" >
+        <form action="">
+        
+          <input type="text" class="form-control" placeholder="Search here.." name="search">
+          <button type="submit"><i class="fe fe-search"></i></button>
+          <span class="closebtn" id="closesearch"><i class="fe fe-x"></i></span>
+        </form>
+      </div>
+    </div>
+  </header>
 
     <!-- Begin page content -->
     <main role="main" class="middle-section">
@@ -221,7 +233,7 @@
                     <img src="assets/images/why-panoceanic.png" alt="">
                   </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <div class="why-card">
                     <div class="why-img">
                       <img src="assets/images/success.png" alt="">
@@ -252,7 +264,7 @@
 
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6">
                   <div class="why-card">
                     <div class="why-img">
                       <img src="assets/images/experties.png" alt="">
@@ -525,7 +537,7 @@
             <div class="row">
               <div class="col-lg-12 ">
                 <div class="copy-inner">
-                  <p>Copyright © 2020 Panoceanic. All rights reserved.</p>
+                  <p>Copyright © 2021 Panoceanic. All rights reserved.</p>
 
                   <ul>
                     <li>

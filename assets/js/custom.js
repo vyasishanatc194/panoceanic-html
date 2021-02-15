@@ -20,6 +20,14 @@ function closeNav2() {
     $(".closebtn2").css("position", "relative");  
 }
 
+$('#opensearch').click(function(){
+    $('#myOverlay').css("display", "block")
+  });
+
+
+  $('#closesearch').click(function(){
+    $('#myOverlay').css("display", "none");
+});
 
 var headertopoption = $(window);
 var headTop = $(".navbar-dark");
@@ -85,6 +93,8 @@ $("#toggle-read").click(function() {
       $("#text_hide_show").hide();
     }
   });
+
+
 
 
 // our service
