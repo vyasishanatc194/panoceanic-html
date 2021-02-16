@@ -223,6 +223,43 @@ fieldset {
   }
 }
 
+
+
+.nav-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-account {
+  padding-left: 10px;
+
+  ul {
+    list-style: none;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+        line-height: 24px;
+        padding: 8px 20px 0px 20px;
+        position: relative;
+        top: -3px;
+        
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 /* menu responsive */
 
 .navbar-expand-md .navbar-toggler {
@@ -2377,7 +2414,7 @@ fieldset {
         border: 0;
         position: absolute;
         right: 15px;
-        top: -17px;
+        top: 0px;
         border: 0;
         display: block;
 
@@ -2389,6 +2426,20 @@ fieldset {
           height: 35px;
           width: 35px;
           border: 0;
+        }
+      }
+    }
+  }
+
+  .user-account {
+    padding-right: 60px;
+
+    ul {
+      li {
+        a {
+          padding: 7px 10px;
+          font-size: 14px;
+          top: 3px;
         }
       }
     }
@@ -3365,7 +3416,7 @@ fieldset {
         border: 0;
         position: absolute;
         right: 15px;
-        top: -17px;
+        top: 0px;
         border: 0;
         display: block;
 
@@ -3377,6 +3428,20 @@ fieldset {
           height: 35px;
           width: 35px;
           border: 0;
+        }
+      }
+    }
+  }
+
+  .user-account {
+    padding-right: 60px;
+
+    ul {
+      li {
+        a {
+          padding: 7px 15px;
+          font-size: 14px;
+          top: 2px;
         }
       }
     }

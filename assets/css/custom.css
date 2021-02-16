@@ -219,6 +219,53 @@ fieldset {
   color: #fff;
 }
 
+.nav-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.user-account {
+  padding-left: 10px;
+}
+
+.user-account ul {
+  list-style: none;
+  display: inline-block;
+}
+
+.user-account ul li {
+  display: inline-block;
+}
+
+.user-account ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 20px 0px 20px;
+  position: relative;
+  top: -3px;
+}
+
+.user-account ul li a:hover {
+  color: #fff;
+}
+
 /* menu responsive */
 .navbar-expand-md .navbar-toggler {
   display: none;
@@ -2543,7 +2590,7 @@ fieldset {
     border: 0;
     position: absolute;
     right: 15px;
-    top: -17px;
+    top: 0px;
     border: 0;
     display: block;
   }
@@ -2555,6 +2602,14 @@ fieldset {
     height: 35px;
     width: 35px;
     border: 0;
+  }
+  .user-account {
+    padding-right: 60px;
+  }
+  .user-account ul li a {
+    padding: 7px 10px;
+    font-size: 14px;
+    top: 3px;
   }
   #cd-shadow-layer {
     position: fixed;
@@ -3323,7 +3378,7 @@ fieldset {
     border: 0;
     position: absolute;
     right: 15px;
-    top: -17px;
+    top: 0px;
     border: 0;
     display: block;
   }
@@ -3335,6 +3390,14 @@ fieldset {
     height: 35px;
     width: 35px;
     border: 0;
+  }
+  .user-account {
+    padding-right: 60px;
+  }
+  .user-account ul li a {
+    padding: 7px 15px;
+    font-size: 14px;
+    top: 2px;
   }
   #cd-shadow-layer {
     position: fixed;
