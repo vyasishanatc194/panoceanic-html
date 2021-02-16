@@ -2047,6 +2047,7 @@ fieldset {
   font-size: 26px;
   line-height: 36px;
   color: #000;
+  font-family: "Crimson Text", serif;
 }
 
 .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading p {
@@ -2262,10 +2263,19 @@ fieldset {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.footer-section .logo-footer-div .logo-footer span {
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 22px;
+  margin-left: 10px;
+  font-family: "Crimson Text", serif;
+}
+
 .footer-section .logo-footer-div .logo-footer img {
   width: auto;
   height: auto;
   max-width: 160px;
+  opacity: 0.5;
 }
 
 .footer-section .logo-footer-div .logo-footer::after {
@@ -2910,9 +2920,9 @@ fieldset {
     padding: 40px 30px;
   }
   .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h3 {
-    font-size: 28px;
-    line-height: 36px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 10px;
   }
   .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h2 {
     font-size: 34px;
@@ -3271,6 +3281,12 @@ fieldset {
   }
 }
 
+@media (min-width: 768px) and (max-width: 996px) {
+  .header .navbar .collapse1 .navbar-nav .nav-item a {
+    padding: 8px 8px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1100px) {
   .middle-section .insights-section .insights-box {
     padding: 50px 60px 0 60px;
@@ -3291,6 +3307,19 @@ fieldset {
   }
   .middle-section .solution-section .solution-card .solution-body {
     min-height: unset;
+  }
+  .middle-section .how-we-work-section .timeline ul li:nth-child(odd) .content h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .middle-section .how-we-work-section .timeline ul li:nth-child(even) .content h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box {
+    max-width: unset;
+    margin: 30px 40px;
+    width: auto;
   }
 }
 
@@ -3543,6 +3572,9 @@ fieldset {
   .middle-section .why-panoceanic-section {
     padding: 80px 0 40px 0;
   }
+  .middle-section .banner-inner-section .content h3 span {
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -3633,6 +3665,12 @@ fieldset {
     right: -30px;
     margin: 30px 0 0 auto;
     position: relative;
+  }
+  .middle-section .insights-section .mobile-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=custom.css.map */

@@ -1902,6 +1902,7 @@ fieldset {
             font-size: 26px;
             line-height: 36px;
             color: #000;
+            font-family: $crimson;
           }
 
           p {
@@ -2099,10 +2100,18 @@ fieldset {
       position: relative;
       color: rgba(255, 255, 255, 0.5);
 
+      span {
+        text-transform: uppercase;
+        font-size: 22px;
+        line-height: 22px;
+        margin-left: 10px;
+        font-family: $crimson;
+      }
       img {
         width: auto;
         height: auto;
         max-width: 160px;
+        opacity: 0.5;
       }
 
       &::after {
@@ -2820,9 +2829,9 @@ fieldset {
 
           .heading {
             h3 {
-              font-size: 28px;
-              line-height: 36px;
-              margin-bottom: 20px;
+              font-size: 24px;
+              line-height: 34px;
+              margin-bottom: 10px;
             }
 
             h2 {
@@ -3292,10 +3301,20 @@ fieldset {
         }
       }
     }
+
+  
   }
 }
 
+@media (min-width: 768px) and (max-width: 996px) {
+
+  .header .navbar .collapse1 .navbar-nav .nav-item a {
+    padding: 8px 8px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1100px) {
+
+  
   .middle-section {
     .insights-section {
       .insights-box {
@@ -3322,6 +3341,23 @@ fieldset {
 
     .solution-section .solution-card .solution-body {
       min-height: unset;
+    }
+
+    .how-we-work-section .timeline ul li:nth-child(odd) .content h3 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    .how-we-work-section .timeline ul li:nth-child(even) .content h3 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+
+    .buisness-needs-section .buiness .buisness-box {
+      max-width: unset;
+      margin: 30px 40px;
+      width: auto;
     }
   }
 
@@ -3614,6 +3650,10 @@ fieldset {
     .why-panoceanic-section {
       padding: 80px 0 40px 0;
     }
+
+    .banner-inner-section .content h3 span {
+      display: inline-block;  
+    }
   }
 }
 
@@ -3635,6 +3675,8 @@ fieldset {
     }
   }
 
+  
+
   .middle-section {
     .trending-section {
       .owl-theme .owl-nav {
@@ -3651,6 +3693,7 @@ fieldset {
         }
       }
     }
+
 
     .service-section .service-area .service-content-logo ul li a {
       width: 120px;
@@ -3741,6 +3784,10 @@ fieldset {
           position: relative;
         }
       }
+    }
+
+    .insights-section .mobile-row {
+      flex-direction: row;
     }
   }
 }
