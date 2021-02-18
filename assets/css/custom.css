@@ -3575,6 +3575,12 @@ fieldset {
   .middle-section .banner-inner-section .content h3 span {
     display: inline-block;
   }
+  .middle-section .buisness-needs-section .buiness .buisness-box p {
+    min-height: 220px;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box h3 {
+    font-size: 35px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -3608,6 +3614,12 @@ fieldset {
   .middle-section .how-we-work-section {
     padding: 80px 0 60px 0;
   }
+  .middle-section .buisness-needs-section .buiness .buisness-box p {
+    min-height: 180px;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box h3 {
+    font-size: 35px;
+  }
 }
 
 /* ----------- iPad Pro ----------- */
@@ -3637,6 +3649,9 @@ fieldset {
     max-width: 200px;
     right: -4 0;
     margin: 30px 0 0 auto;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box p {
+    min-height: 200px;
   }
 }
 
@@ -3671,6 +3686,9 @@ fieldset {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box p {
+    min-height: 170px;
   }
 }
 /*# sourceMappingURL=custom.css.map */

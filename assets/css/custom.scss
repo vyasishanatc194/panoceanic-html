@@ -3654,6 +3654,14 @@ fieldset {
     .banner-inner-section .content h3 span {
       display: inline-block;  
     }
+
+    .buisness-needs-section .buiness .buisness-box p {
+      min-height: 220px;
+    }
+
+    .buisness-needs-section .buiness .buisness-box h3 {
+      font-size: 35px;
+    }
   }
 }
 
@@ -3707,6 +3715,14 @@ fieldset {
     .how-we-work-section {
       padding: 80px 0 60px 0;
     }
+
+    .buisness-needs-section .buiness .buisness-box p {
+      min-height: 180px;
+    }
+
+    .buisness-needs-section .buiness .buisness-box h3 {
+      font-size: 35px;
+    }
   }
 }
 
@@ -3746,6 +3762,10 @@ fieldset {
           margin: 30px 0 0 auto;
         }
       }
+    }
+
+    .buisness-needs-section .buiness .buisness-box p {
+      min-height: 200px;
     }
   }
 }
@@ -3788,6 +3808,10 @@ fieldset {
 
     .insights-section .mobile-row {
       flex-direction: row;
+    }
+
+    .buisness-needs-section .buiness .buisness-box p {
+      min-height: 170px;
     }
   }
 }
