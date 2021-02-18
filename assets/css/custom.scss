@@ -2513,6 +2513,30 @@ fieldset {
 
   /* middle section start here */
 
+  .custom-control-input:checked ~ .custom-control-label::before {
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-color: #000;
+  }
+  
+  .custom-control-label {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .custom-control-label::before {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .custom-control-label::after {
+    height: 20px;
+    width: 20px;
+  }
+
   .middle-section {
     padding-top: 70px;
 
@@ -3818,6 +3842,10 @@ fieldset {
 
     .buisness-needs-section .buiness .buisness-box p {
       min-height: 170px;
+    }
+
+    .about-block-section .row-item-mobile {
+      flex-direction: row;
     }
   }
 }
