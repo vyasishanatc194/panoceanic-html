@@ -652,6 +652,8 @@ fieldset {
     background-color: #2e3192;
     padding: 140px 0 0 0;
 
+    
+
     .heading {
       text-align: center;
       padding-bottom: 70px;
@@ -670,15 +672,20 @@ fieldset {
       }
     }
 
+    .owl-stage {
+      transform: translate3d(1,1);
+    }
+
     .buiness {
       position: relative;
-      max-height: 850px;
+      max-height: 800px;
+      min-height: 800px;
 
       &::after {
         content: "";
         display: block;
         position: absolute;
-        background-color: rgba(46, 49, 146, 0.9);
+        background-color: rgba(0, 0, 0, 0.02);
         height: 100%;
         width: 100%;
         left: 0;
@@ -687,7 +694,7 @@ fieldset {
       }
 
       .buisness-box {
-        margin: 50px 80px 50px 50px;
+        padding: 50px 80px 50px 50px;
         position: absolute;
         left: 0;
         top: 0;
@@ -697,11 +704,12 @@ fieldset {
         height: 100%;
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-end;
         flex-direction: column;
         text-align: left;
         z-index: 99;
-        max-width: 227px;
+        transition: all 0.6s ease-in-out;
+        border-right: 1px solid rgba(255, 255, 255,0.2);
 
         h3 {
           color: #fff;
@@ -711,11 +719,18 @@ fieldset {
           font-family: $crimson;
         }
 
+        .featured {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s ease-out 0.15s;
+        }
+
         P {
           font-size: 18px;
           line-height: 28px;
           color: #fff;
           margin-bottom: 20px;
+
         }
 
         a {
@@ -729,6 +744,7 @@ fieldset {
           align-items: center;
           justify-content: center;
 
+
           i {
             font-size: 20px;
           }
@@ -737,24 +753,34 @@ fieldset {
 
       &:hover {
         .buisness-box {
+          transition: all 0.6s ease-in-out;
           h3 {
             color: #fff;
           }
 
           p {
             color: #fff;
+       
+          }
+
+          .featured {
+            max-height: 120px;
+            transition: max-height 0.5s ease-out 0.15s;
           }
 
           a {
-            background-color: transparent;
-            color: #fff;
+            background-color: #fff;
+            color: #2e3192;
+            i {
+              font-size: 22px;
+            }
           }
         }
 
         &::after {
-          background-color: rgba(46, 49, 146, 0.4);
+          background-color: rgba(0, 0, 0, 0.15);
           transition: all 0.3s;
-          border: 1px solid transparent;
+          border-right: 1px solid transparent;
         }
       }
     }
@@ -798,6 +824,63 @@ fieldset {
             color: #2e3192;
           }
         }
+      }
+    }
+
+    .owl-item.center {
+
+   
+        .buiness {
+          margin: 0 !important;
+          .buisness-box {
+            .featured {
+              max-height: 180px;
+            }
+          }
+        
+      }
+    }
+
+    // new
+   
+    .buisness-slides {
+      position: relative;
+      .b-slide {
+        background-image: url(../images/slides/slide-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .b-slide.active {
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .slide-one {
+        background-image: url(../images/slides/slide-1.jpg);
+      }
+
+      .slide-two {
+        background-image: url(../images/slides/slide-2.jpg);
+ 
+      }
+
+      .slide-three {
+        background-image: url(../images/slides/slide-3.jpg);
+      }
+
+      .slide-four {
+        background-image: url(../images/slides/slide-4.jpg);
       }
     }
   }
@@ -2695,6 +2778,7 @@ fieldset {
 
       .buiness {
         max-height: 400px;
+        min-height: 400px;
 
         .buisness-box {
           h3 {
@@ -2712,6 +2796,18 @@ fieldset {
             width: 40px;
           }
         }
+
+        .buisness-box {
+          padding: 30px 20px;
+        }
+  
+        &:hover {
+          .buisness-box {
+          .featured {
+            max-height: 180px;
+          }
+        }
+        }
       }
 
       .owl-theme {
@@ -2725,6 +2821,8 @@ fieldset {
           }
         }
       }
+
+     
     }
 
     .testimomnial-section {
@@ -3441,10 +3539,18 @@ fieldset {
     }
 
 
-    .buisness-needs-section .buiness .buisness-box {
-      max-width: unset;
-      margin: 30px 40px;
-      width: auto;
+    .buisness-needs-section .buiness {
+      .buisness-box {
+        padding: 30px 20px;
+      }
+
+      &:hover {
+        .buisness-box {
+        .featured {
+          max-height: 160px;
+        }
+      }
+      }
     }
 
    
@@ -3757,8 +3863,18 @@ fieldset {
       display: inline-block;  
     }
 
-    .buisness-needs-section .buiness .buisness-box p {
-      min-height: 220px;
+    .buisness-needs-section .buiness {
+      .buisness-box {
+        padding: 30px 20px;
+      }
+
+      &:hover {
+        .buisness-box {
+        .featured {
+          max-height: 200px;
+        }
+      }
+      }
     }
 
     .buisness-needs-section .buiness .buisness-box h3 {
@@ -3822,8 +3938,19 @@ fieldset {
       padding: 80px 0 60px 0;
     }
 
-    .buisness-needs-section .buiness .buisness-box p {
-      min-height: 180px;
+    
+    .buisness-needs-section .buiness {
+      .buisness-box {
+        padding: 30px 20px;
+      }
+
+      &:hover {
+        .buisness-box {
+        .featured {
+          max-height: 160px;
+        }
+      }
+      }
     }
 
     .buisness-needs-section .buiness .buisness-box h3 {
@@ -3870,8 +3997,18 @@ fieldset {
       }
     }
 
-    .buisness-needs-section .buiness .buisness-box p {
-      min-height: 200px;
+    .buisness-needs-section .buiness {
+      .buisness-box {
+        padding: 30px 20px;
+      }
+
+      &:hover {
+        .buisness-box {
+        .featured {
+          max-height: 200px;
+        }
+      }
+      }
     }
   }
 }
@@ -3914,10 +4051,6 @@ fieldset {
 
     .insights-section .mobile-row {
       flex-direction: row;
-    }
-
-    .buisness-needs-section .buiness .buisness-box p {
-      min-height: 170px;
     }
 
     .about-block-section .row-item-mobile {

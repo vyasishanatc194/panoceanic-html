@@ -106,7 +106,7 @@ $("#toggle-read").click(function() {
 
 // our service
 
-$(".owl-carousel-banner").owlCarousel({
+ $(".owl-carousel-banner").owlCarousel({
     loop:true,
     margin:0,
     smartSpeed:2000,
@@ -137,6 +137,8 @@ $(".owl-carousel-banner").owlCarousel({
         }
     }
 });
+
+
 
 
 $(".owl-carousel-technology").owlCarousel({
@@ -175,8 +177,8 @@ $(".owl-carousel-technology").owlCarousel({
 });
 
 
-$(".owl-carousel-buisness").owlCarousel({
-    loop:true,
+var owl = $(".owl-carousel-buisness").owlCarousel({
+    loop: true,
     margin:0,
     smartSpeed:2000,
     autoplay:true,
@@ -184,12 +186,13 @@ $(".owl-carousel-buisness").owlCarousel({
     autoplayHoverPause:true,
     dots: false,
     nav: true,
+    center: true,
     responsiveClass: true,
     navText: [
         "<i class='fe fe-arrow-left'></i>",
         "<i class='fe fe-arrow-right'></i>",
     ],
-    responsiveClass:true,
+    responsiveClass:true,  
     responsive:{
         0:{
             items:1,
@@ -202,9 +205,44 @@ $(".owl-carousel-buisness").owlCarousel({
             items:3,
         },
         1025:{
-            items:4,
+            items:5,
         }
     }
+});
+
+owl.on('changed.owl.carousel',function(property){
+    var current = property.item.index;
+    // var src = $(property.target).find(".owl-item").eq(current).find("img").attr('src');
+    var src = $(property.target).find(".owl-item").eq(current).find('div').attr('class');
+    console.log('Image current is ' + src);
+    
+
+    if((src)=="item one"){
+        $(".b-slide.active").removeClass("active");
+        $(".slide-one").addClass("active");
+        $("one").addClass("active-center");
+    };
+
+    if((src)=="item two"){
+        $(".b-slide.active").removeClass("active");
+        $(".slide-two").addClass("active");
+        $(this).addClass("active-center");
+    };
+
+    if((src)=="item three"){
+        $(".b-slide.active").removeClass("active");
+        $(".slide-three").addClass("active");
+        $(this).addClass("active-center");
+    };
+
+    if((src)=="item four"){
+        $(".b-slide.active").removeClass("active");
+        $(".slide-four").addClass("active");
+        $(this).addClass("active-center");
+    };
+
+
+
 });
 
 
