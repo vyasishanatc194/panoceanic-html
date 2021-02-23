@@ -35,10 +35,16 @@ var headTop = $(".navbar-dark");
 headertopoption.on("scroll", function () {
     if (headertopoption.scrollTop() > 100) {
         headTop.addClass("fixed-top slideInDown animated");
+        $('.logo-blue').attr('src','assets/images/logo-blue.png');
+        
     } else {
         headTop.removeClass("fixed-top slideInDown animated");
+        $('.logo-blue').attr('src','assets/images/logo.png');
+        
     }
 });
+
+
 
   
 // wow
@@ -97,6 +103,7 @@ $("#toggle-read").click(function() {
 
 
 
+
 // our service
 
 $(".owl-carousel-banner").owlCarousel({
@@ -104,7 +111,7 @@ $(".owl-carousel-banner").owlCarousel({
     margin:0,
     smartSpeed:2000,
     autoplay:true,
-    autoplayTimeout:4000,
+    autoplayTimeout:10000,
     autoplayHoverPause:true,
     dots: true,
     responsiveClass:true,

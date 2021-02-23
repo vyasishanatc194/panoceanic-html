@@ -107,7 +107,7 @@ fieldset {
 
 /* ############################ header section ############################### */
 .fixed-top {
-  background-color: #2e3192 !important;
+  background-color: #fff !important;
   -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.02);
           box-shadow: 0 7px 12px rgba(0, 0, 0, 0.02);
   position: fixed !important;
@@ -116,7 +116,7 @@ fieldset {
   left: 0;
   z-index: 1030;
   height: 55px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .header {
@@ -264,6 +264,36 @@ fieldset {
 
 .user-account ul li a:hover {
   color: #fff;
+}
+
+.header .navbar.fixed-top .collapse1 .navbar-nav .nav-item a {
+  color: rgba(46, 49, 146, 0.8);
+  font-weight: 500;
+}
+
+.header .navbar.fixed-top .collapse1 .navbar-nav .nav-item a:hover {
+  color: #2e3192;
+  font-weight: 500;
+}
+
+.header .navbar.fixed-top .collapse1 .navbar-nav .nav-item a.active {
+  color: #2e3192;
+  font-weight: 500;
+}
+
+.header .navbar.fixed-top .user-account ul li a {
+  color: rgba(46, 49, 146, 0.8);
+  font-weight: 500;
+}
+
+.header .navbar.fixed-top .user-account ul li a:hover {
+  color: #2e3192;
+  font-weight: 500;
+}
+
+.header .navbar.fixed-top .user-account ul li a.actie {
+  color: #2e3192;
+  font-weight: 500;
 }
 
 /* menu responsive */
@@ -693,6 +723,7 @@ fieldset {
 
 .middle-section .buisness-needs-section .buiness {
   position: relative;
+  max-height: 850px;
 }
 
 .middle-section .buisness-needs-section .buiness::after {
@@ -751,7 +782,7 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness .buisness-box a {
-  color: #000;
+  color: #fff;
   border: 1px solid #fff;
   height: 56px;
   width: 56px;
@@ -773,22 +804,23 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box h3 {
-  color: #2e3192;
+  color: #fff;
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box p {
-  color: #000;
+  color: #fff;
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box a {
-  background-color: #2e3192;
+  background-color: transparent;
+  color: #fff;
 }
 
 .middle-section .buisness-needs-section .buiness:hover::after {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(46, 49, 146, 0.4);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
 }
 
 .middle-section .buisness-needs-section .owl-theme .owl-nav {
@@ -930,7 +962,8 @@ fieldset {
 }
 
 .middle-section .testimomnial-section .owl-dots {
-  margin-bottom: 30px;
+  position: relative;
+  bottom: 30px;
 }
 
 .middle-section .testimomnial-section .owl-dots button {
@@ -1059,9 +1092,20 @@ fieldset {
   background-color: #fff;
 }
 
+.middle-section .service-section .service-area .service-content-logo ul li a:hover {
+  -webkit-box-shadow: 0 7px 12px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 7px 12px rgba(0, 0, 0, 0.03);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .middle-section .service-section .service-area .service-content-logo ul li a img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .middle-section .victory-section {
@@ -2592,6 +2636,13 @@ fieldset {
   }
   .header .navbar .navbar-collapse .navbar-nav .nav-item a {
     white-space: nowrap;
+    color: rgba(255, 255, 255, 0.7) !important;
+  }
+  .header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+    color: #fff !important;
+  }
+  .header .navbar .navbar-collapse .navbar-nav .nav-item a.active {
+    color: white !important;
   }
   .header .navbar .navbar-toggler {
     color: #fff;
@@ -2620,6 +2671,9 @@ fieldset {
     padding: 7px 10px;
     font-size: 14px;
     top: 3px;
+  }
+  .header .navbar.fixed-top .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/menubar-blue.png);
   }
   #cd-shadow-layer {
     position: fixed;
@@ -2871,6 +2925,9 @@ fieldset {
   .middle-section .service-section .service-area .service-content-logo ul li a {
     height: 120px;
     width: 120px;
+  }
+  .middle-section .technology-integrated-inner {
+    overflow: hidden;
   }
   .middle-section .victory-section {
     padding: 60px 0;
@@ -3399,7 +3456,7 @@ fieldset {
     padding: 0 20px;
   }
   .header .navbar .navbar-collapse .navbar-nav .nav-item a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7) !important;
     font-size: 16px;
     line-height: 26px;
     padding: 8px 12px;
@@ -3407,7 +3464,10 @@ fieldset {
     white-space: nowrap;
   }
   .header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
-    color: #fff;
+    color: #fff !important;
+  }
+  .header .navbar .navbar-collapse .navbar-nav .nav-item a.active {
+    color: white !important;
   }
   .header .navbar .navbar-collapse .navbar-nav .nav-btn a {
     background-color: #ed5c37;
@@ -3447,6 +3507,9 @@ fieldset {
     padding: 7px 15px;
     font-size: 14px;
     top: 2px;
+  }
+  .header .navbar.fixed-top .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/menubar-blue.png);
   }
   #cd-shadow-layer {
     position: fixed;
