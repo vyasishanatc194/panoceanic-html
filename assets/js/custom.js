@@ -186,7 +186,7 @@ var owl = $(".owl-carousel-buisness").owlCarousel({
     autoplayHoverPause:true,
     dots: false,
     nav: true,
-    center: true,
+    // center: true,
     responsiveClass: true,
     navText: [
         "<i class='fe fe-arrow-left'></i>",
@@ -205,10 +205,32 @@ var owl = $(".owl-carousel-buisness").owlCarousel({
             items:3,
         },
         1025:{
-            items:5,
+            items:4,
         }
     }
 });
+
+checkClasses();
+    owl.on('translated.owl.carousel', function(event) {
+        checkClasses();
+    });
+
+    function checkClasses(){
+        var total = $('.owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active').length;
+        
+        $('.owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item').removeClass('firstActiveItem lastActiveItem');
+        
+        $('.owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active').each(function(index){
+            if (index === 1) {
+                // this is the first one
+                $(this).addClass('firstActiveItem center');
+            }
+            if (index === total - 1 && total>1) {
+                // this is the last one
+                $(this).addClass('lastActiveItem');
+            }
+        });
+    }
 
 owl.on('changed.owl.carousel',function(property){
     var current = property.item.index;
@@ -220,25 +242,25 @@ owl.on('changed.owl.carousel',function(property){
     if((src)=="item one"){
         $(".b-slide.active").removeClass("active");
         $(".slide-one").addClass("active");
-        $("one").addClass("active-center");
+ 
     };
 
     if((src)=="item two"){
         $(".b-slide.active").removeClass("active");
         $(".slide-two").addClass("active");
-        $(this).addClass("active-center");
+  
     };
 
     if((src)=="item three"){
         $(".b-slide.active").removeClass("active");
         $(".slide-three").addClass("active");
-        $(this).addClass("active-center");
+    
     };
 
     if((src)=="item four"){
         $(".b-slide.active").removeClass("active");
         $(".slide-four").addClass("active");
-        $(this).addClass("active-center");
+       
     };
 
 
