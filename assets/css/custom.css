@@ -11,6 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -776,8 +777,8 @@ fieldset {
 
 .middle-section .buisness-needs-section .buiness .buisness-box h3 {
   color: #fff;
-  font-size: 44px;
-  line-height: 29px;
+  font-size: 42px;
+  line-height: 1;
   margin-bottom: 15px;
   font-family: "Crimson Text", serif;
 }
@@ -796,7 +797,7 @@ fieldset {
   margin-bottom: 20px;
 }
 
-.middle-section .buisness-needs-section .buiness .buisness-box a {
+.middle-section .buisness-needs-section .buiness .buisness-box .btn.btn-circle {
   color: #fff;
   border: 1px solid #fff;
   height: 56px;
@@ -812,10 +813,19 @@ fieldset {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.middle-section .buisness-needs-section .buiness .buisness-box a i {
+.middle-section .buisness-needs-section .buiness .buisness-box .btn.btn-circle i {
   font-size: 20px;
+}
+
+.middle-section .buisness-needs-section .buiness .buisness-box .btn.btn-circle:hover, .middle-section .buisness-needs-section .buiness .buisness-box .btn.btn-circle:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box {
@@ -862,9 +872,6 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -928,7 +935,7 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buisness-slides .b-slide {
-  background-image: url(../images/slides/slide-1.jpg);
+  background-image: url(../images/slides/email.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -951,19 +958,31 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buisness-slides .slide-one {
-  background-image: url(../images/slides/slide-1.jpg);
+  background-image: url(../images/slides/email.jpg);
 }
 
 .middle-section .buisness-needs-section .buisness-slides .slide-two {
-  background-image: url(../images/slides/slide-2.jpg);
+  background-image: url(../images/slides/website.jpg);
 }
 
 .middle-section .buisness-needs-section .buisness-slides .slide-three {
-  background-image: url(../images/slides/slide-3.jpg);
+  background-image: url(../images/slides/crm.jpg);
 }
 
 .middle-section .buisness-needs-section .buisness-slides .slide-four {
-  background-image: url(../images/slides/slide-4.jpg);
+  background-image: url(../images/slides/hardware.jpg);
+}
+
+.middle-section .buisness-needs-section .buisness-slides .slide-five {
+  background-image: url(../images/slides/automation.jpg);
+}
+
+.middle-section .buisness-needs-section .buisness-slides .slide-six {
+  background-image: url(../images/slides/collaboration-tool.jpg);
+}
+
+.middle-section .buisness-needs-section .buisness-slides .slide-seven {
+  background-image: url(../images/slides/technology-partner.jpg);
 }
 
 .middle-section .testimomnial-section {
@@ -987,7 +1006,7 @@ fieldset {
 }
 
 .middle-section .testimomnial-section .testimonial-area {
-  background-image: url(../images/bg-testimonial.jpg);
+  background-image: url(../images/panoceanic-testimonial-banner.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 60px;
@@ -1243,6 +1262,7 @@ fieldset {
   background: linear-gradient(to right, #00cbff 0%, #f563e8 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
 }
 
 .middle-section .victory-section .heading h3 span {
@@ -2404,7 +2424,6 @@ fieldset {
 }
 
 .footer-section .logo-footer-div .logo-footer::after {
-  content: "\e930";
   font-family: "Feather" !important;
   speak: none;
   font-style: normal;
@@ -2662,6 +2681,10 @@ fieldset {
   }
   .overlay .overlay-content button:hover {
     background: #fff;
+  }
+  .middle-section .victory-section .heading h3 {
+    font-size: 52px;
+    line-height: 78px;
   }
 }
 
