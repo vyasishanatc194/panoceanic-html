@@ -1,6 +1,7 @@
 @import url("../css/bootstrap.min.css");
 @import url("../fonts/feather/feather.css");
 @import url("font-awesome.min.css");
+@import url("all.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
@@ -250,7 +251,7 @@ fieldset {
         padding: 8px 20px 0px 20px;
         position: relative;
         top: -3px;
-        
+
         &:hover {
           color: #fff;
         }
@@ -259,13 +260,11 @@ fieldset {
   }
 }
 
-
-.header .navbar.fixed-top  {
-
+.header .navbar.fixed-top {
   .collapse1 .navbar-nav .nav-item a {
     color: rgba(46, 49, 146, 0.8);
     font-weight: 500;
-  
+
     &:hover {
       color: rgba(46, 49, 146, 1);
       font-weight: 500;
@@ -280,7 +279,7 @@ fieldset {
   .user-account ul li a {
     color: rgba(46, 49, 146, 0.8);
     font-weight: 500;
-  
+
     &:hover {
       color: rgba(46, 49, 146, 1);
       font-weight: 500;
@@ -318,7 +317,7 @@ fieldset {
   .form-control {
     border: 1px solid #848484;
     height: 50px;
-    background-color: #fff;    
+    background-color: #fff;
     font-size: 18px;
     box-shadow: none;
     outline: 0;
@@ -653,8 +652,6 @@ fieldset {
     background-color: #2e3192;
     padding: 140px 0 0 0;
 
-    
-
     .heading {
       text-align: center;
       padding-bottom: 70px;
@@ -674,7 +671,7 @@ fieldset {
     }
 
     .owl-stage {
-      transform: translate3d(1,1);
+      transform: translate3d(1, 1);
     }
 
     .buiness {
@@ -710,7 +707,7 @@ fieldset {
         text-align: left;
         z-index: 99;
         transition: all 0.6s ease-in-out;
-        border-right: 1px solid rgba(255, 255, 255,0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
 
         h3 {
           color: #fff;
@@ -731,7 +728,6 @@ fieldset {
           line-height: 28px;
           color: #fff;
           margin-bottom: 20px;
-
         }
 
         .btn.btn-circle {
@@ -750,8 +746,9 @@ fieldset {
           i {
             font-size: 20px;
           }
-          
-          &:hover, &:focus {
+
+          &:hover,
+          &:focus {
             outline: none;
             box-shadow: none;
           }
@@ -767,7 +764,6 @@ fieldset {
 
           p {
             color: #fff;
-       
           }
 
           .featured {
@@ -835,21 +831,18 @@ fieldset {
     }
 
     .owl-item.center {
-
-   
-        .buiness {
-          margin: 0 !important;
-          .buisness-box {
-            .featured {
-              max-height: 180px;
-            }
+      .buiness {
+        margin: 0 !important;
+        .buisness-box {
+          .featured {
+            max-height: 180px;
           }
-        
+        }
       }
     }
 
     // new
-   
+
     .buisness-slides {
       position: relative;
       .b-slide {
@@ -879,7 +872,6 @@ fieldset {
 
       .slide-two {
         background-image: url(../images/slides/website.jpg);
- 
       }
 
       .slide-three {
@@ -979,8 +971,8 @@ fieldset {
     }
 
     .owl-dots {
-    position: relative;
-    bottom: 30px;
+      position: relative;
+      bottom: 30px;
 
       button {
         box-shadow: none;
@@ -2281,11 +2273,62 @@ fieldset {
     }
   }
 
+  .footer-top-row-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .social-root-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    ul.footer-social-ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0 15px 5px 0;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .social-link {
+        margin: 0;
+        transition: all 0.8s;
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+        line-height: 40px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: rgba(255, 255, 255, 1);
+          color: #1b1d5b;
+        }
+      }
+    }
+  }
+
   .content-footer {
     p {
       color: rgba(255, 255, 255, 0.4);
       font-size: 12px;
       line-height: 24px;
+
+      a {
+        color: inherit;
+      }
     }
   }
 
@@ -2512,7 +2555,7 @@ fieldset {
         }
       }
     }
-  }  
+  }
 }
 
 /* ###########################################################################
@@ -2573,8 +2616,7 @@ fieldset {
               }
 
               &.active {
-                
-                  color: rgba(255, 255, 255, 1) !important;
+                color: rgba(255, 255, 255, 1) !important;
               }
             }
           }
@@ -2692,19 +2734,19 @@ fieldset {
     background-color: #000;
     border-color: #000;
   }
-  
+
   .custom-control-label {
     padding-left: 10px;
     font-size: 16px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.4);
   }
-  
+
   .custom-control-label::before {
     height: 20px;
     width: 20px;
   }
-  
+
   .custom-control-label::after {
     height: 20px;
     width: 20px;
@@ -2831,13 +2873,13 @@ fieldset {
         .buisness-box {
           padding: 30px 20px;
         }
-  
+
         &:hover {
           .buisness-box {
-          .featured {
-            max-height: 180px;
+            .featured {
+              max-height: 180px;
+            }
           }
-        }
         }
       }
 
@@ -2852,8 +2894,6 @@ fieldset {
           }
         }
       }
-
-     
     }
 
     .testimomnial-section {
@@ -2975,7 +3015,7 @@ fieldset {
           line-height: 30px;
           margin-bottom: 40px;
         }
-        
+
         p {
           font-size: 16px;
           line-height: 26px;
@@ -3455,6 +3495,11 @@ fieldset {
         margin-bottom: 30px;
       }
     }
+
+    .footer-top-row-right {
+      justify-content: flex-start;
+      padding: 0 0 20px 0;
+    }
   }
 }
 
@@ -3517,20 +3562,15 @@ fieldset {
         }
       }
     }
-
-  
   }
 }
 
 @media (min-width: 768px) and (max-width: 996px) {
-
   .header .navbar .collapse1 .navbar-nav .nav-item a {
     padding: 8px 8px;
   }
 }
 @media (min-width: 768px) and (max-width: 1100px) {
-
-  
   .middle-section {
     .insights-section {
       .insights-box {
@@ -3569,7 +3609,6 @@ fieldset {
       line-height: 34px;
     }
 
-
     .buisness-needs-section .buiness {
       .buisness-box {
         padding: 30px 20px;
@@ -3577,14 +3616,12 @@ fieldset {
 
       &:hover {
         .buisness-box {
-        .featured {
-          max-height: 160px;
+          .featured {
+            max-height: 160px;
+          }
         }
       }
-      }
     }
-
-   
   }
 
   // no css
@@ -3654,8 +3691,7 @@ fieldset {
               }
 
               &.active {
-                
-                  color: rgba(255, 255, 255, 1) !important;
+                color: rgba(255, 255, 255, 1) !important;
               }
             }
           }
@@ -3891,7 +3927,7 @@ fieldset {
     }
 
     .banner-inner-section .content h3 span {
-      display: inline-block;  
+      display: inline-block;
     }
 
     .buisness-needs-section .buiness {
@@ -3901,10 +3937,10 @@ fieldset {
 
       &:hover {
         .buisness-box {
-        .featured {
-          max-height: 200px;
+          .featured {
+            max-height: 200px;
+          }
         }
-      }
       }
     }
 
@@ -3936,8 +3972,6 @@ fieldset {
     }
   }
 
-  
-
   .middle-section {
     .trending-section {
       .owl-theme .owl-nav {
@@ -3955,7 +3989,6 @@ fieldset {
       }
     }
 
-
     .service-section .service-area .service-content-logo ul li a {
       width: 120px;
       height: 120px;
@@ -3969,7 +4002,6 @@ fieldset {
       padding: 80px 0 60px 0;
     }
 
-    
     .buisness-needs-section .buiness {
       .buisness-box {
         padding: 30px 20px;
@@ -3977,10 +4009,10 @@ fieldset {
 
       &:hover {
         .buisness-box {
-        .featured {
-          max-height: 160px;
+          .featured {
+            max-height: 160px;
+          }
         }
-      }
       }
     }
 
@@ -4008,7 +4040,7 @@ fieldset {
 
         .insights-content {
           max-width: 350px;
-          
+
           h3 {
             font-size: 40px;
             line-height: 50px;
@@ -4035,10 +4067,10 @@ fieldset {
 
       &:hover {
         .buisness-box {
-        .featured {
-          max-height: 200px;
+          .featured {
+            max-height: 200px;
+          }
         }
-      }
       }
     }
   }

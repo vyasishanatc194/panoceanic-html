@@ -1,6 +1,7 @@
 @import url("../css/bootstrap.min.css");
 @import url("../fonts/feather/feather.css");
 @import url("font-awesome.min.css");
+@import url("all.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
@@ -2442,10 +2443,76 @@ fieldset {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.footer-section .footer-top-row-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-section .social-root-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.footer-section .social-root-div ul.footer-social-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-section .social-root-div ul.footer-social-ul li {
+  margin: 0 15px 5px 0;
+}
+
+.footer-section .social-root-div ul.footer-social-ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-section .social-root-div ul.footer-social-ul .social-link {
+  margin: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 0;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-section .social-root-div ul.footer-social-ul .social-link:hover {
+  background: white;
+  color: #1b1d5b;
+}
+
 .footer-section .content-footer p {
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   line-height: 24px;
+}
+
+.footer-section .content-footer p a {
+  color: inherit;
 }
 
 .footer-section .copy-right-text {
@@ -3424,6 +3491,12 @@ fieldset {
   }
   .footer-section .copy-right-text .copy-inner ul {
     margin-bottom: 30px;
+  }
+  .footer-section .footer-top-row-right {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 0 20px 0;
   }
 }
 
