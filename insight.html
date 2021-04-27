@@ -94,18 +94,15 @@
                   <div class="col-lg-6 col-md-5">
           
                         <div class="content">
-                          <h3>Case Studies, Digital Transformation, Modern Workplace, News
-                            <span>
-                              services
-                            </span></h3>
-                          <a href="#!"class="text-link">View all Insights <i class="fe fe-arrow-right ml-3"></i></a>
+                          <h3>Case Studies, Digital Transformation, Modern Workplace, News</h3>
+                          <a href="#scroll-insights-block-section" class="text-link scroll-to-bottom">View all Insights <i class="fe fe-arrow-right ml-3"></i></a>
                         </div>
               
                   
                   </div>
                   <div class="col-lg-6 col-md-7">
                     <div class="banner-img">
-                      <img src="assets/images/banner-inner-3.png  " alt="">
+                      <img src="assets/images/insights-image.png" class="img-fluid img-banner" alt="img" />
                     </div>
                   </div>
         
@@ -120,7 +117,7 @@
 
  
 
-       <section class="insights-section">
+       <section class="insights-section" id="scroll-insights-block-section">
          <div class="insight-inner">
             <div class="container">
               <div class="row">
@@ -144,7 +141,7 @@
                         <h3>Case Studies</h3>
                         <p>See how we helped our clients enhance their workplace productivity and empowered their employees.</p>
                       </div>
-                      <a href="#" class="btn btn-outline-primary">View All Services</a>
+                      <a href="#" class="btn btn-outline-primary">Read More</a>
                     </div>
                     <div class="insights-img"><img src="assets/images/case/case-1.png" alt=""></div>
                   </div>
@@ -157,7 +154,7 @@
                         <h3>Digital Transformation</h3>
                         <p>Learn how you can use technology to replace your manual and outdated processes to create new ways of working…</p>
                       </div>
-                      <a href="#" class="btn btn-outline-primary">View All Services</a>
+                      <a href="#" class="btn btn-outline-primary">Read More</a>
                     </div>
                     <div class="insights-img"><img src="assets/images/case/case-2.png" alt=""></div>
                   </div>
@@ -173,7 +170,7 @@
                         <h3>Modern Workplace</h3>
                         <p>The way we work is changing forever. Learn how technology can help your business adapt and thrive at a pace…</p>
                       </div>
-                      <a href="#" class="btn btn-outline-primary">View All Services</a>
+                      <a href="#" class="btn btn-outline-primary">Read More</a>
                     </div>
                     <div class="insights-img"><img src="assets/images/case/case-3.png" alt=""></div>
                   </div>
@@ -186,7 +183,7 @@
                         <h3>News</h3>
                         <p>Take a look at our thoughts and analysis on the latest technology trends and topics. </p>
                       </div>
-                      <a href="#" class="btn btn-outline-primary">View All Services</a>
+                      <a href="#" class="btn btn-outline-primary">Read More</a>
                     </div>
                     <div class="insights-img"><img src="assets/images/case/case-4.png" alt=""></div>
                   </div>
@@ -229,18 +226,41 @@
       <div class="footer-inner">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <div class="logo-footer-div">
-                <a href="#" class="logo-footer"><img src="assets/images/footer-logo.png" alt=""><span>Panoceanic</span></a>
 
-                <a href="#!" class="footer-link">Home</a>
+            <div class="col-lg-7 col-md-7">
+              <div class="footer-top-row-left">
+                <div class="logo-footer-div">
+                  <a href="index.html" class="logo-footer"><img src="assets/images/footer-logo.png" alt=""><span>Panoceanic</span></a>
+                  <!-- <a href="#!" class="footer-link">Home</a> -->
+                </div>
+              
+                <div class="content-footer">
+                  <p>To View The Latest News, <a class="link" href="insight.html">Visit Insights</a></p>
+                </div>
               </div>
-            
-              <div class="content-footer">
-                <p>To View The Latest News, Visit Insights</p>
-              </div>
-           
             </div>
+
+            <div class="col-lg-5 col-md-5">
+              <div class="footer-top-row-right">
+                <div class="social-root-div">
+                  <ul class="footer-social-ul">
+                    <li> 
+                      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a> 
+                    </li>
+                    <li>
+                      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
           <hr>
           <div class="copy-right-text">
@@ -266,8 +286,6 @@
 
     </footer>
 
-
-
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
@@ -275,6 +293,20 @@
   <script src="assets/js/wow.js"></script>
   <script src="assets/js/custom.js"></script>
 
+  <script>
+    $('.scroll-to-bottom').on('click',function (e) {
+      e.preventDefault();
+      var target = this.hash;
+      var $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          // window.location.hash = target;
+      });
+    });
+
+  </script>
+  
 </body>
 
 </html>

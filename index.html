@@ -24,7 +24,10 @@
         <div class="container">
           <div class="row row-100 col-header">
             <div class="col-lg-3 col-12 col-30">
-              <a class="navbar-brand smoth-scroll" href="index.html"><img src="assets/images/logo.png" alt="" class="logo-blue" /></a>
+              <a class="navbar-brand smoth-scroll" href="index.html">
+                <img src="assets/images/logo.png" alt="logo" class="logo-blue logo-blue-bg-blue" />
+                <img src="assets/images/logo-blue.png" alt="logo" class="logo-blue logo-blue-bg-white" />
+              </a>
             </div>
             <div class="col-lg-9 col-12 col-70">
                 <button class="navbar-toggler" onclick="openNav2()" type="button">
@@ -226,7 +229,7 @@
          </div>
        </section>
 
-       <section class="buisness-needs-section">
+       <section class="buisness-needs-section onfocus-header-white" id="onfocus-header-white1">
          <div class="buisness-need">
            <div class="container">
             <div class="row justify-content-center">
@@ -484,7 +487,7 @@
             <div class="more-area">
               <div class="row">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="1.5s"  data-wow-offset="5"> 
-                  <div class="more-card">
+                  <div class="more-card" id="more-solution-card1">
                     <div class="more-img">
                       <img src="assets/images/more-icon/mpre-2.svg" alt="">
                     </div>
@@ -492,13 +495,13 @@
                       Consulting</h3>
                     <p>Get the right advice on how introducing digital capabilities resolves business inefficiencies.</p>
 
-                    <a href="#!" class="btn btn-outline-primary">More</a>
+                    <a href="#" data-toggle="modal" data-target="#needs-content-modal" class="btn btn-outline-primary view-more-btn-pop">More</a>
                   </div>
                 </div>
 
                 
                 <div class="col-lg-4  wow fadeIn" data-wow-delay="0.6s" data-wow-duration="1.5s"  data-wow-offset="5"> 
-                  <div class="more-card">
+                  <div class="more-card" id="more-solution-card2">
                     <div class="more-img">
                       <img src="assets/images/more-icon/more-3.svg" alt="">
                     </div>
@@ -506,12 +509,12 @@
                       Consulting</h3>
                     <p>Find out how Dynamics can improve the way you manage your data.</p>
 
-                    <a href="#!" class="btn btn-outline-primary">More</a>
+                    <a href="#" data-toggle="modal" data-target="#needs-content-modal" class="btn btn-outline-primary view-more-btn-pop">More</a>
                   </div>
                 </div>
 
                 <div class="col-lg-4  wow fadeIn" data-wow-delay="0.9s" data-wow-duration="1.5s"  data-wow-offset="5"> 
-                  <div class="more-card">
+                  <div class="more-card" id="more-solution-card3">
                     <div class="more-img">
                       <img src="assets/images/more-icon/more-1.svg" alt="">
                     </div>
@@ -519,7 +522,7 @@
                       Services</h3>
                     <p>More than a managed services provider, we provide advice to ensure you get the best out of your technology.</p>
 
-                    <a href="#!" class="btn btn-outline-primary">More</a>
+                    <a href="#" data-toggle="modal" data-target="#needs-content-modal" class="btn btn-outline-primary view-more-btn-pop">More</a>
                   </div>
                 </div>
 
@@ -617,7 +620,7 @@
         </div>
         </section>
 
-      <section class="victory-section">
+      <section class="victory-section onfocus-header-white" id="onfocus-header-white2">
           <div class="victory-inner">
             <div class="container">
               <div class="victory-area">
@@ -762,15 +765,106 @@
 
     </footer>
 
+    <div class="modal modal-custom fade" id="needs-content-modal" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header modal-header2">
+            <button type="button" class="close" data-dismiss="modal"> <i class="fe fe-x"></i> </button>
+          </div>
+          <div class="modal-body p-0">
+            
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                  
+                <section class="solution-section solution-main-card-section solution-main-card-home-section">
+                  <div class="solution-inner">
+                    <div class="container">
+                      <div class="row row-5">
 
+                        <div class="col-lg-12 col-pad-5 col-md-12 hidden-content-card" id="solution-home-popup-content1">
+                          <div class="solution-card">
+                            <div class="solution-img">
+                              <img src="assets/images/solution/s1.svg" alt="">
+                            </div>
+                            <div class="solution-body">
+                              <h3>Digital Transformation Consulting</h3>
+                              <p>Get the right advice on how introducing digital capabilities resolves business inefficiencies. </p>
+                              <!-- <p>Panoceanic is passionate about finding ways to use technology to create success for your business. Together, we’ll solve problems and inefficiencies caused by manual processes or old technology by introducing digital capabilities. </p>
+                              <p>Key benefits: organisational efficiency, future-proofed business </p> -->
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-12 col-pad-5 col-md-12 hidden-content-card" id="solution-home-popup-content2">
+                          <div class="solution-card">
+                            <div class="solution-img">
+                              <img src="assets/images/solution/s2.svg" alt="">
+                            </div>
+                            <div class="solution-body">
+                              <h3>Dynamics 365 CRM/ERP Consulting</h3>
+                              <p>Find out how Dynamics can improve the way you manage your data. </p>
+                              <!-- <p>Leveraging Microsoft Dynamics 365, Panoceanic implements processes and reporting for sales, customer service, HR, finance, operations, supply chain management, marketing and more. Through visual reporting and AI, you can identify opportunities, understand your clients better and create efficient workflows for your staff.  </p>
+                              <p>Key benefits: single view of customer & business data, accelerated sales, simplified processes, integration with Microsoft 365 </p> -->
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-12 col-pad-5 col-md-12 hidden-content-card" id="solution-home-popup-content3">
+                          <div class="solution-card">
+                            <div class="solution-img">
+                              <img src="assets/images/solution/s10.svg" alt="">
+                            </div>
+                            <div class="solution-body">
+                              <h3>Managed Technology Services </h3>
+                              <p>More than a managed services provider, we provide advice to ensure you get the best out of your technology. </p>
+                              <!-- <p>Panoceanic can manage your technology at a fraction of the cost of employing your own IT staff. You can rest assured that your technology is safe in the hands of dedicated experts, highly experienced with all the technology we manage. More than a managed technology services provider, we also provide you with advisory services to ensure you get the best out of your technology.  </p>
+                              <p>Key benefits: no surprises for your technology budget, guaranteed compliance & security, peace of mind so you can return your focus to your core business </p> -->
+                            </div>
+                          
+                          </div>
+                        </div>
+        
+                      </div>
+                    </div>
+                      
+                  </div>
+               </section>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/owl.carousel.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/custom.js"></script>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+    <script>
+      // $("#needs-content-modal").modal("show");
+  
+      for(let i=1; i<=12; i++) {
+        $("#more-solution-card"+i+" .view-more-btn-pop").click(function(){
+          if($("#solution-home-popup-content"+i+".hidden-content-card") != $("#solution-home-popup-content"+i+".active-content-card")) {
+            // console.log("Open popup number" + i);
+            $("#solution-home-popup-content"+i).addClass("active-content-card").removeClass("hidden-content-card");
+          }
+        });
+        
+  
+        $("#needs-content-modal").on('hide.bs.modal', function () {
+          if($("#solution-home-popup-content"+i+".active-content-card")) {
+            $("#solution-home-popup-content"+i).removeClass("active-content-card").addClass("hidden-content-card");
+          } 
+        });
+      }
+      
+    </script>
 
 </body>
-
 </html>
