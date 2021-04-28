@@ -38,50 +38,6 @@ headertopoption.on("scroll", function () {
   }
 });
 
-// onfocus-header-white
-
-// var bodyEl = $("body");
-// $(window).on("scroll", function() {
-//   var scrollTop = $(this).scrollTop();
-//   $("#onfocus-header-white1").each(function() {
-//     var el = $(this);
-//     var elemHeight = $(this).height();
-//     var elementTop = $(this).position().top;
-
-//     if (el.offset().top < scrollTop && scrollTop < elementTop + elemHeight) {
-//       bodyEl.addClass("onfocus-header-white");  
-//       $(".navbar").addClass("fixed-top-bg-white").removeClass("fixed-top-bg-blue");
-//     } else {
-//       bodyEl.removeClass("onfocus-header-white");
-//       $(".navbar").removeClass("fixed-top-bg-white").addClass("fixed-top-bg-blue");
-//     }
-//   });
-// });
-
-
-
-// $(window).scroll(function () {
-//   var winHeight = $(this).height();
-//   var scrollTop = $(this).scrollTop();
-
-//   function scrollBG(){
-//     for (let i=0; i < 40; i++) {
-      
-//       $("#onfocus-header-white" + i).each(function (index) {
-//         var elemHeight = $(this).height();
-//         var elementTop = $(this).position().top;
-    
-//         if (elementTop < scrollTop && scrollTop < elementTop + elemHeight) {
-//           headTop.eq(index).addClass("fixed-top-bg-white").removeClass("fixed-top-bg-blue");
-//         } else {
-//           headTop.eq(index).removeClass("fixed-top-bg-white").addClass("fixed-top-bg-blue");
-//         }
-//       });
-//     }
-//   }
-//   scrollBG();
-// });
-
 // wow
 
 $(document).ready(function () {

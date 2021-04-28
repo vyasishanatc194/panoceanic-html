@@ -229,11 +229,23 @@ fieldset {
   background-color: #2e3192 !important;
 }
 
+.fixed-top-bg-white {
+  background-color: #fff !important;
+}
+
 .fixed-top-bg-white.navbar .navbar-brand .logo-blue-bg-blue {
   display: none;
 }
 
 .fixed-top-bg-white.navbar .navbar-brand .logo-blue-bg-white {
+  display: inline-block;
+}
+
+.fixed-top-bg-white.fixed-top-bg-blue.navbar .navbar-brand .logo-blue-bg-blue {
+  display: none;
+}
+
+.fixed-top-bg-white.fixed-top-bg-blue.navbar .navbar-brand .logo-blue-bg-white {
   display: inline-block;
 }
 
@@ -284,32 +296,32 @@ fieldset {
   color: #fff;
 }
 
-.header .navbar.fixed-top:not(.fixed-top-bg-blue) .collapse1 .navbar-nav .nav-item a {
+.header .navbar.fixed-top:not(.fixed-top-bg-blue) .collapse1 .navbar-nav .nav-item a, .fixed-top-bg-white.fixed-top-bg-blue .collapse1 .navbar-nav .nav-item a {
   color: rgba(46, 49, 146, 0.8);
   font-weight: 500;
 }
 
-.header .navbar.fixed-top:not(.fixed-top-bg-blue) .collapse1 .navbar-nav .nav-item a:hover {
+.header .navbar.fixed-top:not(.fixed-top-bg-blue) .collapse1 .navbar-nav .nav-item a:hover, .fixed-top-bg-white.fixed-top-bg-blue .collapse1 .navbar-nav .nav-item a:hover {
   color: #2e3192;
   font-weight: 500;
 }
 
-.header .navbar.fixed-top:not(.fixed-top-bg-blue) .collapse1 .navbar-nav .nav-item a.active {
+.header .navbar.fixed-top:not(.fixed-top-bg-blue) .collapse1 .navbar-nav .nav-item a.active, .fixed-top-bg-white.fixed-top-bg-blue .collapse1 .navbar-nav .nav-item a.active {
   color: #2e3192;
   font-weight: 500;
 }
 
-.header .navbar.fixed-top:not(.fixed-top-bg-blue) .user-account ul li a {
+.header .navbar.fixed-top:not(.fixed-top-bg-blue) .user-account ul li a, .fixed-top-bg-white.fixed-top-bg-blue .user-account ul li a {
   color: rgba(46, 49, 146, 0.8);
   font-weight: 500;
 }
 
-.header .navbar.fixed-top:not(.fixed-top-bg-blue) .user-account ul li a:hover {
+.header .navbar.fixed-top:not(.fixed-top-bg-blue) .user-account ul li a:hover, .fixed-top-bg-white.fixed-top-bg-blue .user-account ul li a:hover {
   color: #2e3192;
   font-weight: 500;
 }
 
-.header .navbar.fixed-top:not(.fixed-top-bg-blue) .user-account ul li a.actie {
+.header .navbar.fixed-top:not(.fixed-top-bg-blue) .user-account ul li a.actie, .fixed-top-bg-white.fixed-top-bg-blue .user-account ul li a.actie {
   color: #2e3192;
   font-weight: 500;
 }
@@ -3109,6 +3121,9 @@ fieldset {
     width: 35px;
     border: 0;
   }
+  .header .fixed-top-bg-white.fixed-top-bg-blue .navbar-toggler .navbar-toggler-icon, .header .fixed-top-bg-white .navbar-toggler .navbar-toggler-icon {
+    background-image: url("../images/menubar-blue.png");
+  }
   .user-account {
     padding-right: 60px;
   }
@@ -3970,6 +3985,9 @@ fieldset {
     height: 35px;
     width: 35px;
     border: 0;
+  }
+  .header .fixed-top-bg-white.fixed-top-bg-blue .navbar-toggler .navbar-toggler-icon, .header .fixed-top-bg-white .navbar-toggler .navbar-toggler-icon {
+    background-image: url("../images/menubar-blue.png");
   }
   .user-account {
     padding-right: 60px;
