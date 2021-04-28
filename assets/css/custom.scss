@@ -2376,6 +2376,11 @@ fieldset {
 
       a {
         color: inherit;
+        transition: all 0.8s;
+
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
       }
     }
   }

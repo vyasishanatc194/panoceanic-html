@@ -2549,6 +2549,12 @@ fieldset {
 
 .footer-section .content-footer p a {
   color: inherit;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.footer-section .content-footer p a:hover {
+  color: white;
 }
 
 .footer-section .copy-right-text {
