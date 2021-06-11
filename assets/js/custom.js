@@ -165,7 +165,7 @@ $(document).ready(function () {
     loop: true,
     margin: 0,
     smartSpeed: 2000,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
     dots: false,
