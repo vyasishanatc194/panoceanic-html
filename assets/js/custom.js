@@ -234,13 +234,13 @@ $(document).ready(function () {
     if (src == "item one") {
       $(".b-slide.active").removeClass("active");
       $(".slide-one").addClass("active");
-      alert("1");
+      
     }
 
     if (src == "item two") {
       $(".b-slide.active").removeClass("active");
       $(".slide-two").addClass("active");
-      alert("2");
+      
     }
 
     if (src == "item three") {
