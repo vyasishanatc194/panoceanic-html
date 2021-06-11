@@ -42,7 +42,7 @@ headertopoption.on("scroll", function () {
 
 $(document).ready(function () {
   var wow = new WOW({
-    mobile: false,
+    // mobile: false,
   }).init();
 
   /// smooth scroll
@@ -170,6 +170,9 @@ $(document).ready(function () {
     autoplayHoverPause: true,
     dots: false,
     nav: false,
+    // rewindNav : true,
+    // items: 4,
+    // slideBy: 2,
     mouseDrag: false,
     // center: true,
     responsiveClass: true,
@@ -205,11 +208,17 @@ $(document).ready(function () {
   });
 
   function checkClasses() {
-    var total = $(".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active").length;
+    var total = $(
+      ".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active"
+    ).length;
 
-    $(".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item").removeClass("firstActiveItem lastActiveItem");
+    $(
+      ".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item"
+    ).removeClass("firstActiveItem lastActiveItem");
 
-    $(".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active").each(function (index) {
+    $(
+      ".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active"
+    ).each(function (index) {
       if (index === 0) {
         // this is the first one
         $(this).addClass("firstActiveItem center");
@@ -234,23 +243,25 @@ $(document).ready(function () {
     if (src == "item one") {
       $(".b-slide.active").removeClass("active");
       $(".slide-one").addClass("active");
-      
+      $(".slide-one").parent().addClass("active-bx-1");
     }
 
     if (src == "item two") {
       $(".b-slide.active").removeClass("active");
       $(".slide-two").addClass("active");
-      
+      $(this).addClass("active-bx-2");
     }
 
     if (src == "item three") {
       $(".b-slide.active").removeClass("active");
       $(".slide-three").addClass("active");
+      $(this).addClass("active-bx-3");
     }
 
     if (src == "item four") {
       $(".b-slide.active").removeClass("active");
       $(".slide-four").addClass("active");
+      $(this).addClass("active-bx-4");
     }
 
     if (src == "item five") {
@@ -274,6 +285,15 @@ $(document).ready(function () {
       owl.trigger("next.owl.carousel");
     }
   );
+
+  var liObj = document.querySelectorAll(".owl-item.active");
+  for (var i = 0; i < liObj.length; i++) {
+    if(i === 4) {
+      profileDetails = liObj[4];
+      ppp = profileDetails.querySelectorAll(".buisness-slides .buiness .buisness-box .btn.btn-circle");
+      console.log(ppp[0].click());
+    }
+  }
 
   $(".owl-carousel-testimonial").owlCarousel({
     loop: true,
