@@ -762,7 +762,7 @@ fieldset {
         .featured {
           max-height: 0;
           overflow: hidden;
-          transition: max-height 0.5s ease-out 0.15s;
+          transition: max-height 0.8s ease-out 0.15s;
         }
 
         P {
@@ -797,7 +797,7 @@ fieldset {
         }
       }
 
-      &:hover {
+      &.active {
         .buisness-box {
           transition: all 0.6s ease-in-out;
           h3 {
@@ -828,10 +828,42 @@ fieldset {
           border-right: 1px solid transparent;
         }
       }
+
+      .buisness-box.hover-card-active {
+        .featured {
+          max-height: 140px;
+        }
+      }
     }
 
     .owl-theme {
       .owl-nav {
+        button {
+          position: absolute;
+          top: calc(400px - 25px);
+          font-size: 36px;
+          color: #fff;
+          height: 50px;
+          width: 50px;
+          background: transparent;
+          z-index: 9999;
+          border-radius: 999px;
+          border: 1px solid transparent;
+          outline: none !important;
+          box-shadow: none !important;
+        }
+
+        .owl-prev {
+          left: 10px;
+        }
+
+        .owl-next {
+          right: 10px;
+        }
+      }
+      
+
+      /*.owl-nav {
         position: absolute;
         top: -100px;
         right: 100px;
@@ -869,7 +901,7 @@ fieldset {
             color: #2e3192;
           }
         }
-      }
+      }*/
     }
 
     .owl-item.center {
@@ -884,7 +916,6 @@ fieldset {
     }
 
     // new
-
     .buisness-slides {
       position: relative;
       .b-slide {
@@ -937,6 +968,48 @@ fieldset {
       }
     }
   }
+
+  .slider-nav.slider-custom-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    
+    .thumbs {
+      .thumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.8s;
+        
+        .img-banner {
+          height: 800px;
+          object-fit: cover;
+        }
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // .owl-theme.owl-carousel-buisness .owl-dots {
+  //   display: none;
+  //   flex-wrap: nowrap;
+  //   width: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   height: 100%;
+
+  //   span {
+  //     display: none;
+  //   }
+  // }
+
+
 
   .testimomnial-section {
     padding: 140px 0 40px 0;

@@ -168,14 +168,18 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
-    dots: false,
-    nav: false,
+    dots: true,
+    dotsEach: true,
+    nav: true,
+    dotsContainer: '.slider-nav .thumbs',
     // rewindNav : true,
     // items: 4,
     // slideBy: 2,
     mouseDrag: false,
+    onInitialized: activeCounter,
+    onTranslated: activeCounter,
     // center: true,
-    responsiveClass: true,
+    // responsiveClass: true,
     navText: [
       "<i class='fe fe-arrow-left'></i>",
       "<i class='fe fe-arrow-right'></i>",
@@ -202,9 +206,9 @@ $(document).ready(function () {
     },
   });
 
-  checkClasses();
+  // checkClasses();
   owl.on("translated.owl.carousel", function (event) {
-    checkClasses();
+    // checkClasses();
   });
 
   function checkClasses() {
@@ -240,61 +244,135 @@ $(document).ready(function () {
       .attr("class");
     // console.log('Image current is ' + src);
 
+    // $(src).hover(function(){
+    //   // alert(src);
+    // });
+
+    let parent_custom = $(this).parent().parent();
+
     if (src == "item one") {
       $(".b-slide.active").removeClass("active");
       $(".slide-one").addClass("active");
-      $(".slide-one").parent().addClass("active-bx-1");
+      
+      parent_custom.addClass("active-bx-1");
+      parent_custom.removeClass("active-bx-2");
+      parent_custom.removeClass("active-bx-3");
+      parent_custom.removeClass("active-bx-4");
+      parent_custom.removeClass("active-bx-5");
+      parent_custom.removeClass("active-bx-6");
+      parent_custom.removeClass("active-bx-7");
     }
 
     if (src == "item two") {
       $(".b-slide.active").removeClass("active");
       $(".slide-two").addClass("active");
-      $(this).addClass("active-bx-2");
+
+      parent_custom.addClass("active-bx-2");
+      parent_custom.removeClass("active-bx-1");
+      parent_custom.removeClass("active-bx-3");
+      parent_custom.removeClass("active-bx-4");
+      parent_custom.removeClass("active-bx-5");
+      parent_custom.removeClass("active-bx-6");
+      parent_custom.removeClass("active-bx-7");
     }
 
     if (src == "item three") {
       $(".b-slide.active").removeClass("active");
       $(".slide-three").addClass("active");
-      $(this).addClass("active-bx-3");
+      
+      parent_custom.addClass("active-bx-3");
+      parent_custom.removeClass("active-bx-1");
+      parent_custom.removeClass("active-bx-2");
+      parent_custom.removeClass("active-bx-4");
+      parent_custom.removeClass("active-bx-5");
+      parent_custom.removeClass("active-bx-6");
+      parent_custom.removeClass("active-bx-7");
     }
 
     if (src == "item four") {
       $(".b-slide.active").removeClass("active");
       $(".slide-four").addClass("active");
-      $(this).addClass("active-bx-4");
+     
+      parent_custom.addClass("active-bx-4");
+      parent_custom.removeClass("active-bx-1");
+      parent_custom.removeClass("active-bx-2");
+      parent_custom.removeClass("active-bx-3");
+      parent_custom.removeClass("active-bx-5");
+      parent_custom.removeClass("active-bx-6");
+      parent_custom.removeClass("active-bx-7");
     }
 
     if (src == "item five") {
       $(".b-slide.active").removeClass("active");
       $(".slide-five").addClass("active");
+
+      parent_custom.addClass("active-bx-5");
+      parent_custom.removeClass("active-bx-1");
+      parent_custom.removeClass("active-bx-2");
+      parent_custom.removeClass("active-bx-3");
+      parent_custom.removeClass("active-bx-4");
+      parent_custom.removeClass("active-bx-6");
+      parent_custom.removeClass("active-bx-7");
     }
 
     if (src == "item six") {
       $(".b-slide.active").removeClass("active");
       $(".slide-six").addClass("active");
+
+      parent_custom.addClass("active-bx-6");
+      parent_custom.removeClass("active-bx-1");
+      parent_custom.removeClass("active-bx-2");
+      parent_custom.removeClass("active-bx-3");
+      parent_custom.removeClass("active-bx-4");
+      parent_custom.removeClass("active-bx-5");
+      parent_custom.removeClass("active-bx-7");
     }
 
     if (src == "item seven") {
       $(".b-slide.active").removeClass("active");
       $(".slide-seven").addClass("active");
+
+      parent_custom.addClass("active-bx-7");
+      parent_custom.removeClass("active-bx-1");
+      parent_custom.removeClass("active-bx-2");
+      parent_custom.removeClass("active-bx-3");
+      parent_custom.removeClass("active-bx-4");
+      parent_custom.removeClass("active-bx-5");
+      parent_custom.removeClass("active-bx-6");
     }
   });
 
   $(".buisness-slides .buiness .buisness-box .btn.btn-circle").click(
     function () {
-      owl.trigger("next.owl.carousel");
+      // owl.trigger("next.owl.carousel");
+      // jQuery(this).trigger("click");
+      
     }
   );
 
-  var liObj = document.querySelectorAll(".owl-item.active");
-  for (var i = 0; i < liObj.length; i++) {
-    if(i === 4) {
-      profileDetails = liObj[4];
-      ppp = profileDetails.querySelectorAll(".buisness-slides .buiness .buisness-box .btn.btn-circle");
-      console.log(ppp[0].click());
-    }
-  }
+  $(".buisness-slides .buiness .buisness-box").hover(function() {
+    $('.hover-card-active').removeClass('hover-card-active');
+    $(this).addClass("hover-card-active");
+  });
 
+  // var liObj = document.querySelectorAll(".owl-item.active");
+  // for (var i = 0; i < liObj.length; i++) {
+  //   if(i === 4) {
+  //     profileDetails = liObj[4];
+  //     ppp = profileDetails.querySelectorAll(".buisness-slides .buiness .buisness-box .btn.btn-circle");
+  //     console.log(ppp[0].click());
+  //   }
+  // }
+
+  function activeCounter(event) {
+    // owl.on('changed.owl.carousel', function(event) {}
+    var items     = event.item.count;     // Number of items
+    var item      = event.item.index;     // Position of the current item
+    
+    // $(".slider-nav.slider-custom-nav").addClass("slider"+ (item - 3));
+  }
+  
+  
   $(".owl-carousel-testimonial").owlCarousel({
     loop: true,
     margin: 0,
