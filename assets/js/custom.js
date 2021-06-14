@@ -169,6 +169,7 @@ $(document).ready(function () {
     autoplayTimeout: 10000,
     autoplayHoverPause: true,
     dots: false,
+    dotsEach: true,
     nav: false,
     // rewindNav : true,
     // items: 4,
@@ -208,27 +209,83 @@ $(document).ready(function () {
   });
 
   function checkClasses() {
-    var total = $(
-      ".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active"
-    ).length;
+    var total = $(".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active").length;
 
-    $(
-      ".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item"
-    ).removeClass("firstActiveItem lastActiveItem");
+    $(".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item").removeClass("firstActiveItem lastActiveItem");
 
-    $(
-      ".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active"
-    ).each(function (index) {
+    $(".owl-carousel-buisness .owl-stage-outer .owl-stage .owl-item.active").each(function (index) {
       if (index === 0) {
         // this is the first one
-        $(this).addClass("firstActiveItem center");
+        $(this).addClass("firstActiveItem center").removeClass("activeItem2");
       }
       if (index === total - 0 && total > 0) {
         // this is the last one
         $(this).addClass("lastActiveItem");
       }
+
+      if (index === 1) {
+        $(this).addClass("activeItem2").removeClass("activeItem3");
+      }
+
+      if (index === 2) {
+        $(this).addClass("activeItem3").removeClass("activeItem4");
+
+        // new click
+        setInterval(function(){
+          var liObj = document.querySelectorAll(".owl-item.active");
+          
+          for (var i = 0; i < liObj.length; i++) {
+              if(i === 4){
+              profileDetails = liObj[4];
+              
+          ppp = profileDetails.querySelectorAll(
+                  ".btn-circle"
+                );
+              
+              //ppp[0].classList.remove("mystyle");
+              ppp[0].classList.add("change-img-div");
+              ppp[0].onclick = function(){ ppp[0].click()};
+              ppp[0].removeEventListener("click", elemEventHandler , false);
+              liObj = {};
+              break;
+              //console.log(ppp[0].click());
+              }
+          } 
+      }, 100);
+      function elemEventHandler(){
+          console.log('event remoed');
+      }
+      }
+
+      if (index === 3) {
+        $(this).addClass("activeItem4").removeClass("activeItem3");
+
+        // new click
+        setInterval(function(){
+          var liObj = document.querySelectorAll(".owl-item.active");
+          
+          for (var i = 0; i < liObj.length; i++) {
+              if(i === 5){
+              profileDetails = liObj[5];
+              
+          ppp = profileDetails.querySelectorAll(
+                  ".btn-circle"
+                );
+              
+              //ppp[0].classList.remove("mystyle");
+              ppp[0].classList.add("change-img-div");
+              ppp[0].onclick = function(){ ppp[0].click();ppp[0].click();};
+              ppp[0].removeEventListener("click", elemEventHandler , false);
+              liObj = {};
+              break;
+              //console.log(ppp[0].click());
+              }
+          } 
+        }, 100);
+      }
     });
   }
+
 
   owl.on("changed.owl.carousel", function (property) {
     var current = property.item.index;
@@ -286,14 +343,16 @@ $(document).ready(function () {
     }
   );
 
-  var liObj = document.querySelectorAll(".owl-item.active");
-  for (var i = 0; i < liObj.length; i++) {
-    if(i === 4) {
-      profileDetails = liObj[4];
-      ppp = profileDetails.querySelectorAll(".buisness-slides .buiness .buisness-box .btn.btn-circle");
-      console.log(ppp[0].click());
-    }
-  }
+  // $('.owl-carousel-buisness .owl-dots .owl-dot').hover(function() {
+	// 	$(this).click();
+  //   // $(".owl-item.active.firstActiveItem.center")
+ 	// })
+
+  // $(".buisness-slides .buiness .buisness-box").hover(function() {
+  //   $('.owl-item').removeClass('firstActiveItem');
+  //   $('.hover-card-active').removeClass('hover-card-active');
+  //   $(this).addClass("hover-card-active");
+  // });
 
   $(".owl-carousel-testimonial").owlCarousel({
     loop: true,

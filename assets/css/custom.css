@@ -866,6 +866,45 @@ fieldset {
           box-shadow: none;
 }
 
+.middle-section .buisness-needs-section .buiness.active .buisness-box {
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.middle-section .buisness-needs-section .buiness.active .buisness-box h3 {
+  color: #fff;
+}
+
+.middle-section .buisness-needs-section .buiness.active .buisness-box p {
+  color: #fff;
+}
+
+.middle-section .buisness-needs-section .buiness.active .buisness-box .featured {
+  max-height: 120px;
+  -webkit-transition: max-height 0.5s ease-out 0.15s;
+  transition: max-height 0.5s ease-out 0.15s;
+}
+
+.middle-section .buisness-needs-section .buiness.active .buisness-box a {
+  background-color: #fff;
+  color: #2e3192;
+}
+
+.middle-section .buisness-needs-section .buiness.active .buisness-box a i {
+  font-size: 22px;
+}
+
+.middle-section .buisness-needs-section .buiness.active::after {
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-right: 1px solid transparent;
+}
+
+.middle-section .buisness-needs-section .buiness .buisness-box.hover-card-active .featured {
+  max-height: 140px;
+}
+
 .middle-section .buisness-needs-section .buiness:hover .buisness-box {
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
@@ -901,63 +940,70 @@ fieldset {
   border-right: 1px solid transparent;
 }
 
-.middle-section .buisness-needs-section .owl-theme .owl-nav {
-  position: absolute;
-  top: -100px;
-  right: 100px;
-  left: auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
+.middle-section .buisness-needs-section .owl-theme {
+  /*.owl-nav {
+        position: absolute;
+        top: -100px;
+        right: 100px;
+        left: auto;
+        flex-direction: row;
+        // display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        button {
+          height: 47px;
+          width: 47px;
+          border: 1px solid rgba(1, 36, 55, 0);
+          background-color: #fff;
+          border-radius: 100%;
+          outline: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          transition: all 0.3s;
+          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+          }
+
+          &:hover {
+            background-color: #fff;
+            transition: all 0.3s;
+            border: 1px solid #2e3192;
+            color: #2e3192;
+          }
+        }
+      }*/
 }
 
 .middle-section .buisness-needs-section .owl-theme .owl-nav button {
-  height: 47px;
-  width: 47px;
-  border: 1px solid rgba(1, 36, 55, 0);
-  background-color: #fff;
-  border-radius: 100%;
-  outline: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
+  position: absolute;
+  top: calc(400px - 25px);
+  font-size: 36px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  z-index: 9999;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
-.middle-section .buisness-needs-section .owl-theme .owl-nav button i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 20px;
+.middle-section .buisness-needs-section .owl-theme .owl-nav .owl-prev {
+  left: 10px;
 }
 
-.middle-section .buisness-needs-section .owl-theme .owl-nav button:hover {
-  background-color: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid #2e3192;
-  color: #2e3192;
+.middle-section .buisness-needs-section .owl-theme .owl-nav .owl-next {
+  right: 10px;
 }
 
 .middle-section .buisness-needs-section .owl-item.center .buiness {
@@ -2906,6 +2952,10 @@ fieldset {
 }
 
 .solution-main-card-home-section .solution-card .solution-body {
+  min-height: auto;
+}
+
+.why-pa-card-main-section .solution-card .solution-body {
   min-height: auto;
 }
 
