@@ -809,7 +809,7 @@ fieldset {
           }
 
           .featured {
-            max-height: 120px;
+            // max-height: 120px;
             transition: max-height 0.5s ease-out 0.15s;
           }
 
@@ -847,7 +847,7 @@ fieldset {
           }
 
           .featured {
-            max-height: 120px;
+            // max-height: 120px;
             transition: max-height 0.5s ease-out 0.15s;
           }
 
@@ -4054,13 +4054,13 @@ fieldset {
         padding: 30px 20px;
       }
 
-      &:hover {
-        .buisness-box {
-          .featured {
-            max-height: 160px;
-          }
-        }
-      }
+      // &:hover {
+      //   .buisness-box {
+      //     .featured {
+      //       max-height: 160px;
+      //     }
+      //   }
+      // }
     }
   }
 
@@ -4556,13 +4556,13 @@ fieldset {
         padding: 30px 20px;
       }
 
-      &:hover {
-        .buisness-box {
-          .featured {
-            max-height: 200px;
-          }
-        }
-      }
+      // &:hover {
+      //   .buisness-box {
+      //     .featured {
+      //       max-height: 200px;
+      //     }
+      //   }
+      // }
     }
 
     .buisness-needs-section .buiness .buisness-box h3 {
@@ -4631,7 +4631,7 @@ fieldset {
       &:hover {
         .buisness-box {
           .featured {
-            max-height: 160px;
+            // max-height: 160px;
           }
         }
       }
@@ -4689,7 +4689,7 @@ fieldset {
       &:hover {
         .buisness-box {
           .featured {
-            max-height: 200px;
+            // max-height: 200px;
           }
         }
       }

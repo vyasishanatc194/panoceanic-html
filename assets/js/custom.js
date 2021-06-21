@@ -216,6 +216,8 @@ $(document).ready(function () {
     $( ".buisness-slides .b-slide."+className ).addClass( "active" );
   });
 
+  
+
 
   checkClasses();
   owl.on("translated.owl.carousel", function (event) {
@@ -389,7 +391,7 @@ $(document).ready(function () {
         });
         $( ".buisness-slides .b-slide."+className ).addClass( "active" );
        // triggerEvents = false;
-      }, 1000);      
+      }, 1000);
      
     }
   );

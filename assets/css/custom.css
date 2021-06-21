@@ -880,7 +880,6 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness.active .buisness-box .featured {
-  max-height: 120px;
   -webkit-transition: max-height 0.5s ease-out 0.15s;
   transition: max-height 0.5s ease-out 0.15s;
 }
@@ -919,7 +918,6 @@ fieldset {
 }
 
 .middle-section .buisness-needs-section .buiness:hover .buisness-box .featured {
-  max-height: 120px;
   -webkit-transition: max-height 0.5s ease-out 0.15s;
   transition: max-height 0.5s ease-out 0.15s;
 }
@@ -3955,9 +3953,6 @@ fieldset {
   .middle-section .buisness-needs-section .buiness .buisness-box {
     padding: 30px 20px;
   }
-  .middle-section .buisness-needs-section .buiness:hover .buisness-box .featured {
-    max-height: 160px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -4333,9 +4328,6 @@ fieldset {
   .middle-section .buisness-needs-section .buiness .buisness-box {
     padding: 30px 20px;
   }
-  .middle-section .buisness-needs-section .buiness:hover .buisness-box .featured {
-    max-height: 200px;
-  }
   .middle-section .buisness-needs-section .buiness .buisness-box h3 {
     font-size: 35px;
   }
@@ -4378,9 +4370,6 @@ fieldset {
   .middle-section .buisness-needs-section .buiness .buisness-box {
     padding: 30px 20px;
   }
-  .middle-section .buisness-needs-section .buiness:hover .buisness-box .featured {
-    max-height: 160px;
-  }
   .middle-section .buisness-needs-section .buiness .buisness-box h3 {
     font-size: 35px;
   }
@@ -4416,9 +4405,6 @@ fieldset {
   }
   .middle-section .buisness-needs-section .buiness .buisness-box {
     padding: 30px 20px;
-  }
-  .middle-section .buisness-needs-section .buiness:hover .buisness-box .featured {
-    max-height: 200px;
   }
 }
 
