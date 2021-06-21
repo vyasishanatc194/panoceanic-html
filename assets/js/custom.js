@@ -327,25 +327,25 @@ $(document).ready(function () {
         
         $(".b-slide.active").removeClass("active");
         $(".slide-one").addClass("active");
-        $(".slide-one").parent().addClass("active-bx-1");
+      //  $(".slide-one").parent().addClass("active-bx-1");
       }
 
       if (src == "item two") {
         $(".b-slide.active").removeClass("active");
         $(".slide-two").addClass("active");
-        $(this).addClass("active-bx-2");
+      //  $(this).addClass("active-bx-2");
       }
 
       if (src == "item three") {
         $(".b-slide.active").removeClass("active");
         $(".slide-three").addClass("active");
-        $(this).addClass("active-bx-3");
+       // $(this).addClass("active-bx-3");
       }
 
       if (src == "item four") {
         $(".b-slide.active").removeClass("active");
         $(".slide-four").addClass("active");
-        $(this).addClass("active-bx-4");
+       // $(this).addClass("active-bx-4");
       }
 
       if (src == "item five") {
@@ -370,21 +370,21 @@ $(document).ready(function () {
       var item = $(this).attr('data-item');
       owl.trigger("next.owl.carousel");   
       setTimeout(function(){ 
-       
+        console.log("yesss");
         var newitem = 0;
         if(item !== "7"){
           var newitem = parseInt(item)+1;
         }else{
           var newitem = 1;
         }
-        $( ".buisness-slides .owl-item" ).each(function() {
+        $( ".buisness-slides .owl-item.center" ).each(function() {
           $( this ).removeClass( "center" );
         });
         $("div").find(`[data-img-class='s-${newitem}']`).parent().addClass("center");
         
         var className = `s-${newitem}`;
 
-        $( ".buisness-slides .b-slide" ).each(function() {
+        $( ".buisness-slides .b-slide.active" ).each(function() {
           $( this ).removeClass( "active" );
         });
         $( ".buisness-slides .b-slide."+className ).addClass( "active" );
