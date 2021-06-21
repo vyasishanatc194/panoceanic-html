@@ -697,7 +697,14 @@
 
               </div>
 
-              <script src="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.js" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.css" /><script type = "text/javascript" >function renderSurvey(parentElementId,FirstName, LastName){​​​​​var se = new SurveyEmbed("mmRxzHrqVUWcHhJ8WlLNstahOSnJ9D5EgxSm524OuD5UREVNVllVR0w0RTVXMEtJRVlUMk5LTklYNi4u","https://customervoice.microsoft.com/","https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/","true");var context = {​​​​​"First Name": FirstName,"Last Name": LastName,}​​​​​;se.renderInline(parentElementId, context);}​​​​​</script>
+              <script src="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.js" type="text/javascript"></script>
+              <link rel="stylesheet" type="text/css" href="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.css" />
+              <script type = "text/javascript" >function renderSurvey(parentElementId,FirstName, LastName){​​​​​var se = new SurveyEmbed("mmRxzHrqVUWcHhJ8WlLNstahOSnJ9D5EgxSm524OuD5UREVNVllVR0w0RTVXMEtJRVlUMk5LTklYNi4u","https://customervoice.microsoft.com/","https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/","true");var context = {​​​​​"First Name": FirstName,"Last Name": LastName,}​​​​​;se.renderInline(parentElementId, context);}​​​​​</script>
+              
+              <div id="surveyDiv" style="height: 700px; width:600px; margin-left:auto; margin-right:auto">
+              </div>
+              
+
 
             </div>
           </div>
@@ -854,6 +861,7 @@
     <script src="assets/js/scroll/get-bg-white-header.js"></script>
     <script src="assets/js/custom.js"></script>
     
+    
     <script>
       // $("#needs-content-modal").modal("show");
   
@@ -865,7 +873,6 @@
           }
         });
         
-  
         $("#needs-content-modal").on('hide.bs.modal', function () {
           if($("#solution-home-popup-content"+i+".active-content-card")) {
             $("#solution-home-popup-content"+i).removeClass("active-content-card").addClass("hidden-content-card");
@@ -874,6 +881,8 @@
       }
       
     </script>
+
+    
 
 </body>
 </html>
