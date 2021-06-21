@@ -698,7 +698,7 @@
                   <p>
                 </div>
 
-                <div class="form-conatct">
+                <div class="form-conatct d-none">
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="First name">
                   </div>
@@ -737,24 +737,24 @@
                   </div>
                 </div>
 
+                <div class="form-conatct form-conatct-border">
+                  <script src="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.js" type="text/javascript"></script>
+                  <link rel="stylesheet" type="text/css" href="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.css" />
+                  <script type = "text/javascript" >
+                  function renderSurvey(parentElementId,FirstName, LastName){var se = new SurveyEmbed("mmRxzHrqVUWcHhJ8WlLNstahOSnJ9D5EgxSm524OuD5UREVNVllVR0w0RTVXMEtJRVlUMk5LTklYNi4u","https://customervoice.microsoft.com/","https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/","true");var context = {"First Name": FirstName,"Last Name": LastName,};se.renderInline(parentElementId, context);} 
+                  </script>
+                  <script>
+                    window.addEventListener('load', function () {
+                      renderSurvey("surveyDiv");
+                    }, false);
+                  </script>
+                  <div class="form-365-custom" id="surveyDiv" style="min-height: 600px; height: 600px; width:100%; margin-left:auto; margin-right:auto">
+                  </div>
+                </div>
+
               </div>
 
-              <script src="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.js"
-                type="text/javascript"></script>
-              <link rel="stylesheet" type="text/css"
-                href="https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/Embed.css" />
-              <script
-                type="text/javascript">function renderSurvey(parentElementId, FirstName, LastName) { var se = new SurveyEmbed("mmRxzHrqVUWcHhJ8WlLNstahOSnJ9D5EgxSm524OuD5UREVNVllVR0w0RTVXMEtJRVlUMk5LTklYNi4u", "https://customervoice.microsoft.com/", "https://mfpembedcdnwus2.azureedge.net/mfpembedcontwus2/", "true"); var context = { "First Name": FirstName, "Last Name": LastName, }; se.renderInline(parentElementId, context); }</script>
-              <script>
-                window.addEventListener('load', function () {
-                  renderSurvey("surveyDiv");
-                }, false);
-              </script>
-              <div id="surveyDiv" style="height: 700px; width:600px; margin-left:auto; margin-right:auto">
-              </div>
-
-
-
+              
             </div>
           </div>
         </div>
