@@ -2790,9 +2790,9 @@ fieldset {
 }
 
 .form-conatct.form-conatct-border {
-    border: 1px solid #E6E6F2;
-    padding: 10px;
-    border-radius: 8px;
+  border: 1px solid #e6e6f2;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .contact-info-view-div {
@@ -4639,6 +4639,14 @@ fieldset {
 
     .buisness-needs-section .buiness .buisness-box h3 {
       font-size: 35px;
+    }
+
+    .why-panoceanic-section {
+      .why-card {
+        padding: 25px 30px 25px 30px;
+        min-height: 365px;
+        margin-bottom: 0;
+      }
     }
   }
 }
