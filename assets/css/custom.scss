@@ -115,6 +115,13 @@ fieldset {
 
 /*   normalize  */
 
+.modal.modal-custom .solution-main-card-section .solution-card:hover {
+  background-image: url("../images/panoceanic-testimonial-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 @media (max-width: 1230px) {
   .container {
     max-width: 100%;
@@ -2744,6 +2751,11 @@ fieldset {
       font-size: 18px;
       line-height: 28px;
       color: rgba(0, 0, 0, 0.8);
+
+      a {
+        color: inherit;
+        transition: none;
+      }
     }
 
     a.btn {
@@ -3940,6 +3952,41 @@ fieldset {
       padding: 0 0 20px 0;
     }
   }
+
+  .middle-section .get-in-touch-section .heading {
+    margin-bottom: 30px;
+  }
+
+  .middle-section .victory-section::after {
+    top: -225px;
+    height: auto;
+    font-size: 380px;
+    line-height: 60px;
+  }
+
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area {
+    padding: 40px 0 0 0;
+  }
+ 
+  .contact-info-view-div .contact-info-view-card {
+    padding: 15px;
+    margin: 0 0 15px 0;
+    border-radius: 0;
+    min-height: auto;
+  }
+
+  .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading {
+    padding: 0 20px;
+    margin-bottom: 25px;
+  }
+
+  .middle-section .banner-contact-section .banner-contact-inner .form-conatct.form-conatct-border {
+    padding: 0;
+  }
+
+  .contact-info-view-div .contact-info-view-card .text-div h2 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -4747,6 +4794,18 @@ fieldset {
 
     .about-block-section .row-item-mobile {
       flex-direction: row;
+    }
+
+    .why-panoceanic-section {
+      .why-card {
+        padding: 25px 30px 25px 30px;
+        min-height: 350px;
+        margin-bottom: 10px;
+
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
