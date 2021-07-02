@@ -189,6 +189,13 @@ $(document).ready(function () {
         nav: false,
         mouseDrag: true,
       },
+      568: {
+        items: 2,
+        touchDrag: true,
+        nav: false,
+        mouseDrag: true,
+      },
+
       768: {
         items: 3,
         touchDrag: false,

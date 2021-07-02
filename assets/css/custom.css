@@ -1531,6 +1531,14 @@ fieldset {
   right: 0;
 }
 
+.middle-section .banner-inner-section .banner-img .img-banner-responsive {
+  max-width: 544px;
+  max-height: 544px;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .middle-section .banner-inner-section .owl-theme .owl-dots {
   position: absolute;
   left: 0;
@@ -3428,15 +3436,15 @@ fieldset {
     margin-bottom: 30px;
   }
   .middle-section .testimomnial-section .testimonial-area .testimonials h3 {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 14px;
+    line-height: 26px;
   }
   .middle-section .testimomnial-section .testimonial-area .testimonials .author h3 {
     font-size: 18px;
     line-height: 26px;
   }
   .middle-section .testimomnial-section .testimonial-area .testimonials .author p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
   }
   .middle-section .more-section .more-card {
@@ -3912,6 +3920,138 @@ fieldset {
   .contact-info-view-div .contact-info-view-card .text-div h2 {
     font-size: 14px;
   }
+  .middle-section .banner-section .content h3 {
+    font-size: 24px;
+  }
+  .middle-section .trending-section .technology-left .profile {
+    margin-bottom: 15px;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-content {
+    padding: 0 10px;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-content h3 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-content p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .middle-section .trending-section .technology-left h3 {
+    font-size: 20px;
+  }
+  .middle-section .more-section .more-card h3 {
+    font-size: 24px;
+  }
+  .middle-section .service-section {
+    padding: 0 0 60px 0;
+  }
+  .middle-section .more-section .more-card p {
+    min-height: auto;
+    margin: 0 0 30px 0;
+    font-size: 16px;
+  }
+  .middle-section .more-section .more-card {
+    margin-bottom: 50px;
+  }
+  .middle-section .service-section .service-area .service-content-logo ul li a {
+    height: 106px;
+    width: 106px;
+    border: 6px solid #fff;
+  }
+  .form-conatct.form-conatct-border {
+    padding: 0;
+    border-radius: 0;
+  }
+  .middle-section .service-section .service-area .service-content-logo ul li a img {
+    width: 100%;
+    height: 100%;
+  }
+  .middle-section .banner-section {
+    overflow-x: hidden;
+  }
+  .middle-section .buisness-needs-section .heading {
+    padding-bottom: 50px;
+  }
+  .middle-section .service-section .service-area .service-content-logo ul li {
+    margin: 8px 8px !important;
+    width: calc(50% - 16px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .middle-section .banner-inner-section .content {
+    padding: 40px 0 20px 0;
+  }
+  .middle-section .banner-inner-section .content h3 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .middle-section .banner-inner-section .banner-img img {
+    position: relative;
+    min-width: unset;
+    max-height: unset;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .middle-section .about-block-section {
+    padding: 40px 0;
+  }
+  .middle-section .about-block-section .block-content .block-heading {
+    margin-bottom: 20px;
+  }
+  body .middle-section .about-block-section .block-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  body .middle-section .about-block-section .block-content h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .middle-section .banner-inner-section .banner-img {
+    padding: 30px 0 0 0;
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .middle-section .about-block-section .row-item {
+    margin-bottom: 80px;
+  }
+  .middle-section .why-panoceanic-section .why-panoceanic-img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .middle-section .why-panoceanic-section .why-card {
+    padding: 25px 20px 10px 20px;
+    margin-bottom: 10px;
+  }
+  .middle-section .how-we-work-section {
+    padding: 40px 0 10px 0;
+  }
+  .middle-section .how-we-work-section .timeline ul li:nth-child(odd) .content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .middle-section .how-we-work-section .timeline ul li:nth-child(even) .content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .middle-section .belief-section .heading h3 {
+    margin: 0 0 10px 0;
+  }
+  .middle-section .belief-section .belief-blocks .about-inner {
+    margin: 25px 0 10px 0;
+  }
+  .middle-section .how-we-work-section .heading h3 {
+    font-size: 26px;
+    line-height: 36px;
+    margin: 0 0 10px 0;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -4060,6 +4200,9 @@ fieldset {
     font-size: 24px;
     line-height: 1.6;
   }
+  .middle-section .banner-inner-section .banner-img {
+    padding: 0;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 900px) and (max-height: 600px) and (orientation: landscape) {
@@ -4088,6 +4231,695 @@ fieldset {
   .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h2 {
     font-size: 42px;
     line-height: 1.5;
+  }
+  .middle-section .banner-section .content h3 {
+    margin: 0 0 10px 0;
+  }
+  .middle-section .banner-section {
+    overflow-x: hidden;
+  }
+  .middle-section .banner-section .content {
+    min-height: 360px;
+    padding: 50px 0;
+  }
+  .middle-section .trending-section .heading h3 {
+    font-size: 28px;
+  }
+  .middle-section .trending-section {
+    padding: 40px 0 5px 0;
+  }
+  .middle-section .trending-section .heading {
+    margin-bottom: 10px;
+  }
+  .middle-section .trending-section .technology-left {
+    padding: 10px 20px;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-img {
+    height: 70px;
+    width: 70px;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-content {
+    padding: 0 15px;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-content h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  .middle-section .trending-section .technology-left .profile .profile-content p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .middle-section .trending-section .technology-left h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+  }
+  .middle-section .trending-section .technology-left .profile {
+    margin-bottom: 20px;
+  }
+  .middle-section .trending-section .technology-left {
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+  }
+  .middle-section .trending-section .technology-left .btn.btn-outline-primary {
+    padding: 8px 40px;
+  }
+  .middle-section .trending-section .technology-img {
+    padding: 0 24px;
+  }
+  .middle-section .trending-section .technology-img img {
+    width: 100%;
+    max-height: 340px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 24px;
+  }
+  .middle-section .trending-section .owl-theme .owl-nav {
+    width: 100%;
+    margin: 10px auto;
+    bottom: 0 !important;
+    position: relative;
+  }
+  .middle-section .buisness-needs-section {
+    padding: 40px 0 0 0;
+  }
+  .middle-section .buisness-needs-section .heading h3 {
+    font-size: 28px;
+    max-width: 550px;
+    margin: 0 auto 10px auto;
+  }
+  .middle-section .buisness-needs-section .heading p {
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .middle-section .buisness-needs-section .heading {
+    padding-bottom: 40px;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box .featured {
+    max-height: 0;
+  }
+  .middle-section .buisness-needs-section .owl-item.center .buiness .buisness-box .featured {
+    max-height: 180px;
+  }
+  .middle-section .buisness-needs-section .buiness {
+    max-height: 400px;
+    min-height: 400px;
+  }
+  .middle-section .buisness-needs-section .buiness:hover .buisness-box .featured {
+    max-height: 0;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box h3 {
+    font-size: 28px;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box P {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+  .middle-section .buisness-needs-section .buiness .buisness-box .btn.btn-circle {
+    height: 44px;
+    width: 44px;
+  }
+  .middle-section .testimomnial-section {
+    padding: 40px 0 40px 0;
+  }
+  .middle-section .testimomnial-section .testimonial-area .testimonials {
+    padding: 40px 60px 40px 60px;
+    text-align: center;
+  }
+  .middle-section .testimomnial-section .testimonial-area .testimonials .testimonial-img {
+    margin-bottom: 15px;
+    height: 100px;
+    width: 100px;
+  }
+  .middle-section .testimomnial-section .testimonial-area .testimonials h3 {
+    font-size: 16px;
+    line-height: 2;
+  }
+  .middle-section .testimomnial-section .testimonial-area .testimonials .author {
+    padding-top: 20px;
+  }
+  .middle-section .testimomnial-section .testimonial-area .testimonials .author h3 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .middle-section .testimomnial-section .testimonial-area .testimonials .author p {
+    font-size: 16px;
+    line-height: 2;
+    margin: 0;
+  }
+  .middle-section .more-section .more-card p {
+    font-size: 16px;
+    line-height: 26px;
+    min-height: auto;
+    max-width: 550px;
+    margin: 0 auto 30px auto;
+  }
+  .middle-section .more-section .more-card {
+    margin-bottom: 50px;
+  }
+  .middle-section .more-section {
+    padding: 40px 0 0 0;
+  }
+  .middle-section .service-section {
+    padding: 0 0 40px 0;
+  }
+  .middle-section .service-section .service-area .service-content h3 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  .middle-section .service-section .service-area .service-content h4 {
+    font-size: 14px;
+    line-height: 2;
+  }
+  .middle-section .service-section .service-area .service-content p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .middle-section .service-section .service-area .service-content a.btn {
+    margin-top: 10px;
+  }
+  .middle-section .service-section .service-area {
+    padding: 40px 40px 20px 40px;
+  }
+  body .middle-section .service-section .service-content-logo {
+    padding: 20px 0 0 0;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li:first-child {
+    margin-left: 0;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li:nth-child(6) {
+    margin-left: 0;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li a img {
+    width: 100%;
+    height: 100%;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li a {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li {
+    display: inline-block;
+    margin: 10px 9px;
+    height: 110px;
+    width: calc(20% - 20px);
+  }
+  .middle-section .victory-section {
+    padding: 60px 0 140px;
+    overflow: hidden;
+  }
+  .middle-section .victory-section .heading h3 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .middle-section .victory-section .heading {
+    margin-bottom: 30px;
+  }
+  .middle-section .victory-section .content h4 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .middle-section .victory-section .content h4 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+  .middle-section .victory-section .content p {
+    font-size: 14px;
+    max-width: 550px;
+    margin: 0 auto 26px auto;
+  }
+  .middle-section .victory-section::after {
+    top: -165px;
+    height: auto;
+    font-size: 500px;
+  }
+  .middle-section .get-in-touch-section {
+    padding: 40px 0;
+  }
+  .middle-section .get-in-touch-section .heading h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+  }
+  .middle-section .get-in-touch-section .heading p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .middle-section .get-in-touch-section .heading {
+    margin-bottom: 35px;
+  }
+  .middle-section .banner-section .banner-img img {
+    max-height: calc(100vh - 110px);
+  }
+  .middle-section .buisness-needs-section .owl-theme .owl-nav .owl-prev {
+    top: calc(200px - 25px);
+    display: none;
+  }
+  .middle-section .buisness-needs-section .owl-theme .owl-nav .owl-next {
+    top: calc(200px - 25px);
+    display: none;
+  }
+  .middle-section .banner-inner-section {
+    overflow-x: hidden;
+  }
+  .middle-section .banner-inner-section .banner-img img {
+    max-height: calc(100vh - 70px);
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .middle-section .banner-inner-section .content a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  body .middle-section .banner-inner-section .content a i {
+    top: 2px;
+  }
+  body .middle-section .banner-inner-section .content {
+    min-height: 375px;
+    padding: 70px 0;
+  }
+  body .middle-section .banner-inner-section .banner-img {
+    padding: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body .middle-section .banner-inner-section .banner-img img {
+    max-height: calc(100vh - 55px);
+    -o-object-fit: contain;
+       object-fit: contain;
+    bottom: 0;
+  }
+  .middle-section .about-block-section {
+    padding: 30px 0 10px 0;
+  }
+  .middle-section .about-block-section .block-content .block-heading h3 {
+    font-size: 30px;
+    line-height: 46px;
+  }
+  .middle-section .about-block-section .block-content .block-heading {
+    margin-bottom: 10px;
+  }
+  .middle-section .about-block-section .block-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+  }
+  .middle-section .about-block-section .block-content h4 {
+    font-size: 16px;
+  }
+  .middle-section .about-block-section .block-img.right {
+    margin-bottom: 95px;
+  }
+  .middle-section .about-block-section .row.row-item.row-item-mobile {
+    margin-bottom: 0;
+  }
+  .middle-section .technology-integrated-section {
+    padding: 40px;
+  }
+  .middle-section .technology-integrated-section .integrated-content h3 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  .middle-section .technology-integrated-section .integrated-content P {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .middle-section .technology-integrated-section .integrated-content h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .middle-section .technology-integrated-section .integrated-content .btn.btn-outline-primary.btn-white {
+    padding: 8px 25px;
+    font-size: 13px;
+  }
+  .middle-section .technology-integrated-section .integrated-img {
+    max-width: 230px;
+    margin: -55px 15% 0 auto;
+  }
+  body .middle-section .why-panoceanic-section {
+    padding: 40px 0;
+  }
+  body .middle-section .why-panoceanic-section .content h3 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  body .middle-section .why-panoceanic-section .why-panoceanic-img {
+    margin-top: 20px;
+  }
+  body .middle-section .why-panoceanic-section .why-panoceanic-img img.img-fluid {
+    margin: 0 0 15px 0;
+    max-width: 150px;
+  }
+  body .middle-section .why-panoceanic-section .why-card {
+    padding: 20px 15px 15px 15px;
+    min-height: 245px;
+    margin-bottom: 0;
+  }
+  body .middle-section .why-panoceanic-section .why-card p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  body .middle-section .why-panoceanic-section .why-card a.text-readmore {
+    margin: 5px 0 0 0;
+  }
+  body .middle-section .why-panoceanic-section .why-card h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+  }
+  body .middle-section .how-we-work-section {
+    padding: 40px 0 40px 0;
+  }
+  body .middle-section .how-we-work-section .heading h3 {
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+  body .middle-section .how-we-work-section .heading P {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(odd) .content h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(odd) .content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(even) .content h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(even) .content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  body .middle-section .how-we-work-section .timeline ul li .step-img img {
+    max-height: 160px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: left;
+       object-position: left;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(even) .step-img img {
+    -o-object-position: right;
+       object-position: right;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(odd) .content {
+    top: -10px;
+  }
+  body .middle-section .how-we-work-section .timeline ul li:nth-child(even) .content {
+    top: 10px;
+  }
+  body .middle-section .how-we-work-section .timeline {
+    margin: 40px 0 20px 0;
+  }
+  body .middle-section .belief-section {
+    padding: 40px 0;
+  }
+  body .middle-section .belief-section .heading h3 {
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  body .middle-section .belief-section .heading P {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 650px;
+  }
+  body .middle-section .belief-section .belief-blocks .about-inner {
+    margin: 20px 0 10px 0;
+  }
+  body .middle-section .belief-section .belief-blocks .about-text {
+    padding: 25px 20px 15px 20px;
+    padding-bottom: 20px;
+  }
+  body .middle-section .belief-section .belief-blocks .about-image {
+    height: 285px;
+  }
+  body .middle-section .belief-section .belief-blocks .about-text .quote {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  body .middle-section .belief-section .belief-blocks .about-text h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body .middle-section .belief-section .belief-blocks .about-text p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+  body .middle-section .solution-section {
+    padding: 40px 0;
+  }
+  body .middle-section .solution-section .heading h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    max-width: 605px;
+    margin: 0 auto;
+  }
+  body .middle-section .solution-section .heading P {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+  body .middle-section .solution-section .heading {
+    margin-bottom: 40px;
+  }
+  body .middle-section .solution-section .solution-card h3 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  body .middle-section .solution-section .solution-card p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body .middle-section .solution-section .solution-card .solution-body {
+    min-height: 175px;
+  }
+  body .middle-section .solution-section .solution-card {
+    margin-bottom: 10px;
+  }
+  body .middle-section .insights-section {
+    padding: 40px 0;
+  }
+  body .middle-section .insights-section .heading h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    max-width: 550px;
+    margin: 0 auto 10px auto;
+  }
+  body .middle-section .insights-section .heading p {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  body .middle-section .insights-section .heading {
+    margin-bottom: 10px;
+  }
+  body .middle-section .insights-section .insights-box {
+    padding: 30px 30px 20px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .middle-section .insights-section .insights-box .insights-content h3 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  body .middle-section .insights-section .insights-box .insights-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  body .middle-section .insights-section .insights-box .insights-content .content {
+    margin-bottom: 25px;
+  }
+  body .middle-section .insights-section .insights-box .btn.btn-outline-primary {
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  body .middle-section .subscribe-section {
+    padding: 40px 0;
+  }
+  body .middle-section .subscribe-section .subscribe-content h3 {
+    font-size: 30px;
+    line-height: 44px;
+  }
+  body .middle-section .subscribe-section .subscribe-content h4 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  body .middle-section .subscribe-section .subscribe-content a {
+    font-size: 18px;
+    line-height: 29px;
+  }
+  body .middle-section .subscribe-section .subscribe-content a i {
+    top: 0;
+  }
+  body .middle-section .subscribe-section .xs-custom-width-50 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body .middle-section .subscribe-section .xs-custom-width-45 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 45%;
+            flex: 0 0 45%;
+    max-width: 45%;
+  }
+  body .middle-section .subscribe-section .xs-custom-width-55 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 55%;
+            flex: 0 0 55%;
+    max-width: 55%;
+  }
+  body .middle-section .subscribe-section .subscribe-content {
+    max-width: 400px;
+    padding: 15px 0 0 0;
+  }
+  body .middle-section .banner-contact-section {
+    padding: 80px 0 60px 0;
+  }
+  body .middle-section .banner-contact-section .banner-contact-inner .contact-area {
+    padding: 30px 40px;
+  }
+  body .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h2 {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  body .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  body .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+  }
+  body .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading {
+    margin-bottom: 30px;
+  }
+  body .contact-info-view-div .contact-info-view-card {
+    padding: 20px;
+    margin: 0 0 20px 0;
+    min-height: 95px;
+  }
+  body .contact-info-view-div .contact-info-view-card .text-div h2 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 768px) and (max-height: 600px) and (orientation: landscape) {
+  .middle-section .banner-section .content {
+    min-height: 290px;
+    padding: 20px 0 40px 0;
+  }
+  .middle-section .trending-section .technology-left {
+    padding: 5px 20px;
+    margin: 0 0 10px 0;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li {
+    width: calc(20% - 16px);
+    height: 90px;
+  }
+  body .middle-section .service-section .service-area .service-content-logo ul li a {
+    width: 90px;
+    height: 90px;
+  }
+  .middle-section .service-section .service-area {
+    padding: 30px 40px 20px 40px;
+  }
+  .middle-section .service-section .service-area .service-content-logo {
+    padding-top: 20px;
+  }
+  .footer-section .copy-right-text .copy-inner ul {
+    margin-bottom: 5px;
+  }
+  body .middle-section .banner-inner-section .content {
+    min-height: 290px;
+    padding: 70px 0;
+  }
+  body .middle-section .banner-inner-section .xs-custom-width-40 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+    max-width: 40%;
+  }
+  body .middle-section .banner-inner-section .xs-custom-width-60 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+    max-width: 60%;
+  }
+  body .middle-section .banner-inner-section .banner-img img {
+    max-height: calc(100vh - 55px);
+    min-height: calc(100vh - 55px);
+    -o-object-fit: contain;
+       object-fit: contain;
+    bottom: 0;
+    max-width: 100%;
+    width: 100%;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+  body .middle-section .solution-section .row-5 .col-pad-5 {
+    padding: 0 5px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body .middle-section .banner-inner-section.insight-banner-inner-section .content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  body .middle-section .insights-section .insights-box {
+    padding: 30px 30px 20px 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .middle-section .insights-section .insights-box .insights-content {
+    width: 50%;
+  }
+  body .middle-section .insights-section .insights-box .insights-img {
+    width: 40%;
+    max-width: 200px;
+    margin: 20px auto;
+  }
+  body .middle-section .banner-contact-section {
+    padding: 15px 0 40px 0;
+  }
+  body .middle-section .banner-contact-section .banner-contact-inner .contact-area .heading h2 {
+    margin: 0 0 0 0;
   }
 }
 
