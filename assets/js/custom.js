@@ -195,11 +195,11 @@ $(document).ready(function () {
         nav: false,
         mouseDrag: true,
       },
-
       768: {
         items: 3,
         touchDrag: false,
         mouseDrag: false,
+        nav: false,
       },
 
       1000: {
