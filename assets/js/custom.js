@@ -204,6 +204,9 @@ $(document).ready(function () {
 
       1000: {
         items: 3,
+        touchDrag: false,
+        mouseDrag: false,
+        nav: false,
       },
       1025: {
         items: 4,
