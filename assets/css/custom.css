@@ -4261,6 +4261,7 @@ img#MfpEmbed_CrossButton {
   }
   .middle-section .trending-section {
     padding: 40px 0 5px 0;
+    overflow-x: hidden;
   }
   .middle-section .trending-section .heading {
     margin-bottom: 10px;
@@ -4849,6 +4850,9 @@ img#MfpEmbed_CrossButton {
   body .contact-info-view-div .contact-info-view-card .text-div h2 {
     font-size: 14px;
   }
+  .middle-section .trending-section .owl-theme .owl-nav.disabled {
+    display: none !important;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 768px) and (max-height: 600px) and (orientation: landscape) {
@@ -4992,6 +4996,12 @@ img#MfpEmbed_CrossButton {
   .middle-section .buisness-needs-section .owl-theme .owl-nav .owl-next {
     top: calc(200px - 25px);
     display: none;
+  }
+  .middle-section .trending-section .owl-theme .owl-nav.disabled {
+    display: none !important;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
