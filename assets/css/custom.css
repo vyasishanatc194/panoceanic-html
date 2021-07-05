@@ -3983,6 +3983,9 @@ img#MfpEmbed_CrossButton {
   .middle-section .buisness-needs-section .heading {
     padding-bottom: 50px;
   }
+  .middle-section .buisness-needs-section {
+    overflow-x: hidden;
+  }
   .middle-section .service-section .service-area .service-content-logo ul li {
     margin: 8px 8px !important;
     width: calc(50% - 16px);
@@ -4178,6 +4181,7 @@ img#MfpEmbed_CrossButton {
   }
   .middle-section .buisness-needs-section {
     padding: 90px 0 0 0;
+    overflow-x: hidden;
   }
   .middle-section .buisness-needs-section .heading h3 {
     font-size: 36px;

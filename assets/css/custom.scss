@@ -4070,6 +4070,10 @@ img#MfpEmbed_CrossButton {
     padding-bottom: 50px;
   }
 
+  .middle-section .buisness-needs-section {
+    overflow-x: hidden;
+  }
+
   .middle-section .service-section .service-area .service-content-logo ul li {
     margin: 8px 8px !important;
     width: calc(50% - 16px);
@@ -4336,6 +4340,8 @@ img#MfpEmbed_CrossButton {
 
     .buisness-needs-section {
       padding: 90px 0 0 0;
+      overflow-x: hidden;
+      
 
       .heading {
         h3 {
