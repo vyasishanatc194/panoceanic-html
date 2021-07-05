@@ -5296,6 +5296,10 @@ fieldset {
       max-width: 50%;
     }
   }
+
+  body .middle-section .banner-section .banner-img img {
+    max-height: calc(100vh - 130px);
+  }
 }
 
 /* Portrait */
