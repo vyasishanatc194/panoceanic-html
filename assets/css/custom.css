@@ -118,6 +118,28 @@ img#MfpEmbed_CrossButton {
   height: 24px !important;
 }
 
+body .middle-section .banner-inner-section .banner-img {
+  position: relative;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 56px 0 0 0;
+}
+
+.middle-section .banner-inner-section .banner-img .img-banner {
+  width: 100%;
+  max-width: 540px;
+  max-height: 540px;
+  right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.middle-section .banner-inner-section {
+  overflow-x: hidden;
+}
+
 @media (max-width: 1230px) {
   .container {
     max-width: 100%;
@@ -4538,10 +4560,15 @@ img#MfpEmbed_CrossButton {
     padding: 70px 0;
   }
   body .middle-section .banner-inner-section .banner-img {
-    padding: 0;
+    padding: 56px 0 0 0;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+  .middle-section .banner-inner-section .banner-img .img-banner {
+    min-width: auto;
+    max-width: 325px;
+    max-height: 325px;
   }
   body .middle-section .banner-inner-section .banner-img img {
     max-height: calc(100vh - 55px);
@@ -5221,6 +5248,12 @@ img#MfpEmbed_CrossButton {
   .footer-section .social-media {
     margin-top: 30px;
   }
+  body .middle-section .banner-inner-section .banner-img {
+    padding: 70px 0 0 0;
+  }
+  .middle-section .banner-inner-section .content {
+    min-height: 490px;
+  }
 }
 
 /* Landscape */
@@ -5354,6 +5387,9 @@ img#MfpEmbed_CrossButton {
     padding: 25px 30px 25px 30px;
     min-height: 365px;
     margin-bottom: 0;
+  }
+  .middle-section .banner-inner-section .content {
+    min-height: 540px;
   }
 }
 

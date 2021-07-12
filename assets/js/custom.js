@@ -380,7 +380,7 @@ $(document).ready(function () {
     function () {   
       triggerEvents = true;
       var item = $(this).attr('data-item');
-      owl.trigger("next.owl.carousel");   
+      owl.trigger("next.owl.carousel");
       setTimeout(function(){ 
         console.log("yesss");
         var newitem = 0;
